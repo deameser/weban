@@ -1,13 +1,4 @@
-body {
-    margin: 0;
-    background-image: 
-      url('../Images/art_1_1/art_1_1_bg.png');
-    background-repeat: no-repeat;
-    background-size: min(600vw, 660px) auto;
-    background-position: top center;
-    background-color: #000000;
-    padding-bottom: 140px;
-}
+
 .page_exhibit{
     min-height: 100vh;
     display: grid;
@@ -17,14 +8,8 @@ body {
 
 .exhibit-title{ 
     position: relative; 
-    height: 50px; 
+    height: 40px; 
     padding: 30px;
-    margin-top: 50px;
-}
-.exhibit-title-text-image{
-    display: flex;
-    width: 130px;
-    margin: 10px auto;
 }
 .exhibit-title-text{
     position: relative; z-index: 1;
@@ -35,35 +20,21 @@ body {
 }
 
 .exhibit-title-logo{
-    margin-top: 0px;
+    margin-top: 30px;
     padding: 30px;
 }
 .exhibit-title-logo-img{
-    width: 160px;
-    height: 160px;
+    width: 100%;
+    height: auto;
     display: flex;
     object-fit: cover;
     justify-content: center; /* 수평 가운데 */
-
-    margin: 0 auto;
 }
 @media (min-width: 768px) {
   .exhibit-title-logo-img {
     max-width: var(--container-max); 
     margin: 0 auto;                  /* 가운데 정렬 */
   }
-}
-
-.exhibit-explain-text-1-image {
-    display: flex;
-    margin: 30px auto;
-    width: 287px;
-}
-
-.exhibit-explain-text-2-image {
-    display: flex;
-    margin: 30px auto;
-    width: 287px;
 }
 
 /* 전시 소개 */

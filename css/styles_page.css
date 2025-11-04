@@ -4,10 +4,10 @@ header.nav{
     position: sticky;
     top: 0;
     z-index: 1100;
-    /* 보기 좋게 유리효과(선택) */
+    
     background: transparent;
-    -webkit-backdrop-filter: saturate(160%) blur(8px);
-    backdrop-filter: saturate(160%) blur(8px);
+    /*-webkit-backdrop-filter: saturate(160%) blur(8px);
+    /*backdrop-filter: saturate(160%) blur(8px);*/
     height: auto;
 }
 
@@ -106,7 +106,9 @@ header.nav{
 */
 .info-sound{
     position: relative;
-    width: min(100%, var(--container-max, 660px));
+    width: 344px;
+    /* width: min(100%, var(--container-max, 412px)); */
+    color: #111;
     margin: 0 auto;
 }
 #info-sound-audio {
@@ -115,17 +117,23 @@ header.nav{
 
 .info-sound-audio-player {
     position: relative;
-    width: 100%;
-    height: 120px;
-    border-radius: 32px;
+    width: 344px;
+    /* width: min(100%, 344px); */
+    height: 94px; /*94*/
     background: url("../Images/common/sound_bg.png") center/cover no-repeat;
     padding: 16px 16px 40px;
     box-sizing: border-box;
+    margin: 0 auto;
 }
 .gauge-wrap {
   position: relative;
-  width: 80%;
-  height: 20px; /* 게이지 높이 */
+  --gauge-h: 5px;  /* 트랙높이 */
+  --thumb:   7px;  /* thumb 너비(px) */
+  /*--fill-px: 0px;*/
+  --p: 0;
+
+  /* width: 80%; */
+  height: var(--gauge-h);
   margin: 20px auto;
   background: url("../Images/common/sound_gauge_bg.png") center/100% 100% no-repeat; /* 전체 바 */
   --fill: 0%; /* JS에서 이 값만 바꿔줄 거임 */
@@ -134,10 +142,12 @@ header.nav{
   content: "";
   position: absolute;
   inset: 0;
-  width: var(--fill);
+  width: calc(var(--p) * (100% - var(--thumb)) + (var(--thumb) / 2));
+  /*width: var(--fill-px);  */
   background: url("../Images/common/sound_gauge_fg.png") left center / 100% 100% no-repeat;
   /* fg 이미지를 반복해서 채우고 싶으면 repeat-x, 한 장만 늘이고 싶으면 no-repeat center/100% 100% */
   pointer-events: none;
+  z-index: 0;
 }
 .gauge-wrap input {
   position: absolute;
@@ -148,6 +158,7 @@ header.nav{
   -webkit-appearance: none;
   appearance: none;
   cursor: pointer;
+  z-index: 1;
 }
 .gauge-wrap input::-webkit-slider-runnable-track {
   background: transparent;
@@ -158,9 +169,9 @@ header.nav{
 .gauge-wrap input::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 14px;
-  height: 14px;
-  background: url("./Images/common/sound_thumb.png") center/contain no-repeat;
+  width: 7px;
+  height: 7px;
+  background: url("../Images/common/sound_thumb.png") center/contain no-repeat;
   border: none;
 }
 .gauge-wrap input::-moz-range-track {
@@ -169,7 +180,7 @@ header.nav{
 .gauge-wrap input::-moz-range-thumb {
   width: 14px;
   height: 14px;
-  background: url("./Images/common/sound_thumb.png") center/contain no-repeat;
+  background: url("../Images/common/sound_thumb.png") center/contain no-repeat;
   border: none;
 }
 .gauge-wrap #seekBar {
@@ -179,20 +190,38 @@ header.nav{
   height: 100% !important;
   background: transparent;
 }
+#seekBar { 
+  position:absolute; inset:0;
+  width:100%; height:100%;
+  background:transparent;
+  -webkit-appearance: none; appearance: none; 
+}
+#seekBar::-webkit-slider-runnable-track{
+  height: 5px;            /* .gauge-wrap 높이와 맞춤 */
+  background: transparent;
+}
+
+/* Firefox */
+#seekBar::-moz-range-track{
+  height: 5px;
+  background: transparent;
+}
 #seekBar::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 18px;
-  height: 18px;
-  background: url("./Images/common/sound_thumb.png") center/contain no-repeat;
+  width: 7px;
+  height: 7px;
+  background: url("../Images/common/sound_thumb.png") center/contain no-repeat;
   border: none;
   cursor: pointer;
-  margin-top: -6px; /* 트랙 중앙에 오게 살짝 올림 (트랙 높이에 맞춰서 조절) */
+  margin-top: -3.5px; /* 트랙 중앙에 오게 살짝 올림 (트랙 높이에 맞춰서 조절) */
 }
 #seekBar::-moz-range-thumb {
-  width: 18px;
-  height: 18px;
-  background: url("./Images/common/sound_thumb.png") center/contain no-repeat;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 7px;
+  height: 7px;
+  background: url("../Images/common/sound_thumb.png") center/contain no-repeat;
   border: none;
   cursor: pointer;
 }
@@ -219,20 +248,31 @@ header.nav{
 #playBtn {
   left: 50%;
   transform: translateX(-50%);
+  margin: 0 auto;
 }
-
+#playIcon{
+  width: 12px;
+  height: 16px;
+  margin: 9px auto;
+}
 /* 왼쪽: play에서 살짝 왼쪽으로 */
 #backBtn {
+  width: 17px;
+  height: 13px;
   left: calc(50% - 86px); /* 34px + 여백 정도 */
   transform: translateX(-50%);
   background: url("../Images/common/sound_button_before.png") center/cover no-repeat;
+  margin: 0 auto;
 }
 
 /* 오른쪽: play에서 살짝 오른쪽으로 */
 #forwardBtn {
+  width: 17px;
+  height: 13px;
   left: calc(50% + 86px);
   transform: translateX(-50%);
   background: url("../Images/common/sound_button_after.png") center/cover no-repeat;
+  margin: 0 auto;
 }
 
 
@@ -242,15 +282,15 @@ header.nav{
     position: relative; 
     padding: 0px 0px;
     border-top: 1px solid transparent;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 .page-top-btn{
     pointer-events: auto;  
     position: relative;
     display: flex;
     align-items: center;
-    width: 40px;
-    height: 40px;
+    width: 31px;
+    height: 31px;
     /*padding: 10px 14px;*/
     /*border-radius: 16px;*/
     text-decoration: none;
@@ -272,21 +312,21 @@ header.nav{
 }
 .page-index-btn{
     position: relative;
-    display: flex;
+    display: block;
     align-items: center;
     /*gap: 14px;*/
-    width: 60px;
-    min-height: 32px;
+    width: 15px;
+    min-height: 20px;
     /*padding: 16px 18px;*/
-    border-radius: 16px;
     text-decoration: none;
     color: transparent;
 
     /* 배경 이미지/색 */
     background-image: var(--bg);
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-color: transparent; /* 로딩 전/실패 대비 */
+    background-repeat: no-repeat;
 
     overflow: hidden;
     isolation: isolate;
@@ -318,7 +358,7 @@ header.nav{
     z-index: 1000;
     border-top: 1px solid transparent;
     background: transparent;
-    padding: 12px 16px;
+    /* padding: 12px 16px; */
     padding-bottom: env(safe-area-inset-bottom);
     pointer-events: none;
 }
@@ -340,10 +380,10 @@ header.nav{
     align-items: center;
     justify-content: center;
     /*min-height: 40px;*/
-    width: 40px;
-    height: 40px;
+    width: 31px;
+    height: 31px;
     /*padding: 10px 14px;*/
-    border-radius: 12px;
+    /* border-radius: 12px; */
     text-decoration: none;
     color: #111;
 
@@ -355,6 +395,12 @@ header.nav{
 
     box-shadow: 0 1px 2px rgba(0,0,0,.06);
     transition: transform .15s ease, box-shadow .15s ease;
+}
+.page-before-btn{
+  margin-left: 0px;
+}
+.page-after-btn{
+  margin-right: 25px;
 }
 .page-before-btn h1{
     font-weight: 700;

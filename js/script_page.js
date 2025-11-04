@@ -29,6 +29,10 @@ seekBar.addEventListener('input', () => {
   
   const percent = (seekBar.value / seekBar.max) * 100 || 0;
   gaugeWrap.style.setProperty('--fill', percent + '%');
+
+  const p = (seekBar.value / seekBar.max) || 0;
+  gaugeWrap.style.setProperty('--p', p);
+
   updateGauge();
 });
 
@@ -36,9 +40,20 @@ audio.addEventListener('timeupdate', () => {
   const percent = (audio.currentTime / audio.duration) * 100 || 0;
   gaugeWrap.style.setProperty('--fill', percent + '%');
 
+  const p = (audio.currentTime / audio.duration) || 0;
+  gaugeWrap.style.setProperty('--p', p);
+
   seekBar.value = audio.currentTime;
   /*time.textContent = formatTime(audio.currentTime);*/
 });
+
+audio.addEventListener('loadedmetadata', () => {
+  seekBar.max = audio.duration;
+  const p = (audio.currentTime / audio.duration) || 0;
+  gaugeWrap.style.setProperty('--p', p);
+  updateGauge();
+});
+
 function updateGauge() {
   if (!audio.duration) return;
 
@@ -50,6 +65,10 @@ function updateGauge() {
   if (gaugeWrap) {
     gaugeWrap.style.setProperty('--fill', percent + '%');
   }
+  
+  // 추가
+  const p = (audio.currentTime / audio.duration) || 0;
+  gaugeWrap.style.setProperty('--p', p);
 }
 function formatTime(sec) {
   sec = Math.floor(sec);

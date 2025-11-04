@@ -1,6 +1,6 @@
 html { scroll-behavior: smooth; }
 :root {
-  --container-max: 660px;
+  --container-max: 440px;
   --bottom-h: 64px;
 }
 body { 
@@ -45,23 +45,27 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+    background-color: transparent;
 }
 .main-title-overlay-left,
 .main-title-overlay-right,
 .main-title-overlay-center {
   position: relative;
+    background-color: transparent;
 }
 
 /* 좌상단 로고용 */
 .main-title-overlay-left {
   left: 0.1rem;
   position: relative;
+  margin-left: 0px;
 }
 
 /* 우상단 언어 드롭다운용 */
 .main-title-overlay-right {
   display: flex;
   right: 0.1rem;
+  margin-right: -30px;
 }
 .main-title-overlay-center{
   display: flex;
@@ -79,26 +83,26 @@ body {
   width: 150px;
   height: 20px;
   margin-left: 0px;
-  margin-top: 5px;
+  margin-top: 8px;
 
-  padding: 0.3rem 0.6rem;
+  /*padding: 0.3rem 0.6rem;*/
   background-color: transparent;
   /*box-shadow: 0 12px 32px rgba(0,0,0,0.2);*/
   border: 1px solid rgba(0,0,0,0.05);
 }
 .main-title-back-button-img {
-  width: 10px;
-  height: 20px;
+  width: 8px;
+  height: 14px;
 }
 .page-before-btn-text h1 {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: #fff;
 }
 .main-title-logo-img {
   display: block;
   /*max-width: 120px;*/
-  width: 90px;
-  height: auto;
+  width: 72px;
+  height: 19px;
   margin-left: 0px;
 
   background-color: transparent;
@@ -108,20 +112,22 @@ body {
 .main-title-center-logo-img {
   display: block;
   /*max-width: 120px;*/
-  width: 106px;
-  height: 24px;
+  width: 63px;
+  height: 15px;
 
   background-color: transparent;
   box-shadow: 0 12px 32px rgba(0,0,0,0.2);
   border: 1px solid rgba(0,0,0,0.05);
-  margin: 5px auto;
+  margin: 10px auto;
+  margin-right: 63px;
 }
 .lang-dropdown-icon-img{
   display: block;
-  width: 32px;
-  height: 32px;
+  width: 20px;
+  height: 20px;
   margin-left: 0px;
-  margin-right: 5px;
+  margin-right: -5px;
+  margin-top: 8px;
 
   background-color: transparent;
 }
@@ -129,6 +135,7 @@ body {
   position: relative;
   width: 100px;
   background: transparent;
+  margin-top: 0px;
 }
 .lang-dropdown select{
   padding: 8px 32px 8px 12px;

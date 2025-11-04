@@ -1,4 +1,3 @@
-/*
 body {
     margin: 0;
     background-image: 
@@ -7,37 +6,26 @@ body {
       url('../Images/index/index_bg.png'),
       url('../Images/index/index_bg_black.png');
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-    background-size: 100% 500px, 100% 660px, cover, cover;
-    background-position: top center, bottom center, top center, top center;
-    background-color: transparent, transparent, transparent, transparent;
-    padding-bottom: 140px;
-}
-*/
-body {
-    margin: 0;
-    background-image: 
-      url('../Images/index/index_bg_black.png'),
-      url('../Images/index/index_bg_black.png'),
-      url('../Images/index/index_bg_black.png'),
-      url('../Images/index/index_bg_black.png');
-    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-    background-size: 100% 500px, 100% 660px, cover, cover;
+    background-size: 100% 500px, 100% 660px, min(600vw, 400px) auto, cover;
     background-position: top center, bottom center, top center, top center;
     background-color: transparent, transparent, transparent, transparent;
     padding-bottom: 140px;
 }
 
+.main-title{
+  margin-top: 0px;
+}
 .main-title-img {
-    width: 300px;
+    width: 163px;
     height: auto;
     display: block;
     object-fit: cover;
     object-position: center;
-    margin: 250px auto 100px;
+    margin: 150px auto 100px;
 }
 /* 인덱스 버튼 */
 .main-index{
-    margin-top: 60px;
+    margin-top: 100px;
 }
 .main-index .container{
   max-width: var(--container-max);
@@ -49,7 +37,7 @@ body {
 .main-index-grid{
   display: grid;
   grid-template-columns: 1fr;
-  gap: 8px;
+  gap: 0px;
 }
 
 /* 메인 인덱스 버튼 */
@@ -66,14 +54,24 @@ body {
 
     /* 배경 이미지/색 */
     background-image: var(--bg);
-    background-size: cover;
-    background-position: center;
+    background-size: contain, cover;
+    background-position: center, center;
     background-color: transparent;
 
     overflow: hidden;
     isolation: isolate;
     box-shadow: 0 1px 2px rgba(0,0,0,.06);
     transition: transform .15s ease, box-shadow .15s ease;
+}
+/* 기본 간격: 바로 다음 형제에게만 8px 위여백 */
+.main-index-btn + .main-index-btn{
+  margin-top: 8px;
+}
+
+/* 맨 아래 3개 사이만 ‘붙이기’ → 마지막 두 개의 위여백을 0으로 */
+.main-index-btn:nth-last-child(2),
+.main-index-btn:last-child{
+  margin-top: 0;
 }
 /* 텍스트 */
 .index-btn-text {
