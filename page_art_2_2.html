@@ -5,17 +5,15 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title>Landing Page</title>
 
-    <!-- 기본 폰트 (선택사항: 안 써도 되지만 깔끔하게 보기 좋게 넣어둠) -->
-
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap"
         rel="stylesheet"
     />
 
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/styles_page.css" />
-    <link rel="stylesheet" href="./css/styles_art_1_1.css" />
+    <link rel="stylesheet" href="./css/styles_art_2_2.css" />
 
     <style>
         .audio-player{
@@ -92,74 +90,37 @@
     </header>
     
     <main>
-        <!-- ================= Exhibit ================= -->
-        <section class="exhibit-container" id="exhibit-container">
+        <!-- ================= Art ================= -->
+        <section class="art-container" id="art-container">
             <div class="container">
-                <div class="exhibit-title">    
-                    <!--
-                    <div class="exhibit-title-text">
-                        <h1 data-i18n="art_1_1_exhibit_title">전시 소개</h1>    
+                <div class="art-title">     
+                    <div class="art-title-text">
+                        <h1 data-i18n="exhibit_name_3">예술: 미디어스케이프 (Mediascape)</h1>
                     </div>
-                    -->
+                </div>
+
+                <div class="art-image">
                     <img
-                        class="exhibit-title-text-image"
-                        src="Images/art_1_1/art_1_1_title_text.png"
+                        class="art-image-img"
+                        src="Images/atelier_nodeul_logo_big.png"
                         alt=""
                     />
                 </div>
-
-                <div class="exhibit-title-logo">
-                    <img
-                        class="exhibit-title-logo-img"
-                        src="Images/art_1_1/art_1_1_picture.png"
-                        alt=""
-                    />
+                <div class="art-link">
+                    <a class="art-link-btn" href="https://www.youtube.com/"
+                        style="--bg: url('../Images/index_icon_4.png'); --accent: #ffffff;"
+                        aria-label="">
+                        <span class="art-link-btn-text">
+                            <h1 data-i18n="link_button_text">영상 보러가기</h1>
+                        </span>
+                    </a>
                 </div>
                 
-                <div class="screen-division-line">
-                    <img
-                        class="screen-division-line-img"
-                        src="./Images/common/screen_division_line.png"
-                        alt=""
-                    />
-                </div>
-                <img
-                    class="exhibit-explain-text-1-image"
-                    src="Images/art_1_1/art_1_1_explain_text_1.png"
-                    alt=""
-                />
-                <div class="screen-division-line">
-                    <img
-                        class="screen-division-line-img"
-                        src="./Images/common/screen_division_line.png"
-                        alt=""
-                    />
-                </div>
-
-                <div class="screen-division-line">
-                    <img
-                        class="screen-division-line-img"
-                        src="./Images/common/screen_division_line.png"
-                        alt=""
-                    />
-                </div>
-                <img
-                    class="exhibit-explain-text-2-image"
-                    src="Images/art_1_1/art_1_1_explain_text_1.png"
-                    alt=""
-                />
-                <div class="screen-division-line">
-                    <img
-                        class="screen-division-line-img"
-                        src="./Images/common/screen_division_line.png"
-                        alt=""
-                    />
-                </div>
-                <!-- 전시 소개 -->
-                 <!--
-                <div class="exhibit-introduce">       
-                    <div class="exhibit-introduce-text">
-                        <h1 data-i18n="exhibit_introduce">전시 소개</h1>  
+                <!-- 작가명, 제목 -->
+                <div class="artist-introduce">           
+                    <div class="artist-introduce-text">
+                        <h1 class="artise_name" data-i18n="artist_name_1">작가</h1>
+                        <h1 class="art_title" data-i18n="art_name_1">제목</h1>
                     </div>
                 </div>
                 
@@ -170,24 +131,14 @@
                         alt=""
                     />
                 </div>
-                -->
 
-                <!-- 전시 설명 -->
-                 <!--
-                <div class="exhibit-explain">           
-                    <div class="exhibit-explain-text">
-                        <h1 data-i18n="exhibit_explain">전시 설명</h1>  
+                <!-- 작품 설명 -->
+                <div class="art-explain">           
+                    <div class="art-explain-text">
+                        <h1 data-i18n="art_explain_1">작품 설명</h1>
                     </div>
                 </div>
 
-                <div class="screen-division-line">
-                    <img
-                        class="screen-division-line-img"
-                        src="./Images/common/screen_division_line.png"
-                        alt=""
-                    />
-                </div>
-                -->
 
                 <!-- 페이지 공통 하단 -->
                 <div class="page-bottom">
@@ -201,19 +152,16 @@
                         -->
                     </a>
                     <a class="page-index-btn" href="./index.html"
-                        style="--bg: url('../Images/art_1_1/list_text.png'); --accent: #ffffff;"
                         aria-label="">
-                        <!--
                         <span class="page-index-btn-text">
                             <h1 data-i18n="list_button_text">list</h1>
                         </span>
-                        -->
                     </a>
                 </div>
                 <!-- 페이지 공통 하단 고정 -->
                 <div class="page-fixed-bottom">
                     <div class="page-fixed-bottom-inner">
-                        <a class="page-before-btn" href="./page_schedule.html"
+                        <a class="page-before-btn" href="./page_art_2_1.html"
                             style="--bg: url('../Images/common/button_prev.png'); --accent: #ffffff;"
                             aria-label="">
                             <!--
@@ -223,7 +171,7 @@
                             -->
                         </a>
                         
-                        <a class="page-after-btn" href="./page_art_1_2.html"
+                        <a class="page-after-btn" href="./page_art_3_1.html"
                             style="--bg: url('../Images/common/button_next.png'); --accent: #ffffff;"
                             aria-label="">
                             <!--
