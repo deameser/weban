@@ -2,12 +2,63 @@
 /* Audio */
 const audio = document.getElementById('info-sound-audio');
 const playBtn = document.getElementById('playBtn');
+const playIcon = document.getElementById('playIcon');
 const seekBar = document.getElementById('seekBar');
 const time = document.getElementById('time');
+const tCur  = document.getElementById('timeCurrent');
+const tAll  = document.getElementById('timeTotal');
+
+const PLAY_SRC  = playIcon?.dataset.play  || './Images/common/sound_button_play.png';
+const PAUSE_SRC = playIcon?.dataset.pause || './Images/common/sound_button_pause.png';
 
 audio.addEventListener('loadedmetadata', () => {
   seekBar.max = audio.duration;
+  const p = (audio.currentTime / audio.duration) || 0;
+  gaugeWrap.style.setProperty('--p', p);
   updateGauge();
+  onMeta();
+});
+audio.addEventListener('loadeddata', () => {
+  onMeta();
+});
+
+
+audio.addEventListener('timeupdate', () => {
+  const percent = (audio.currentTime / audio.duration) * 100 || 0;
+  gaugeWrap.style.setProperty('--fill', percent + '%');
+
+  const p = (audio.currentTime / audio.duration) || 0;
+  gaugeWrap.style.setProperty('--p', p);
+
+  seekBar.value = audio.currentTime;
+  /*time.textContent = formatTime(audio.currentTime);*/
+  tCur.textContent = fmtTime(audio.currentTime || 0);
+  seek.value = audio.currentTime || 0;
+  syncFillPx();
+});
+
+audio.addEventListener('input', () => {
+  seekBar.max = audio.duration;
+  const p = (audio.currentTime / audio.duration) || 0;
+  gaugeWrap.style.setProperty('--p', p);
+  updateGauge();
+});
+
+/* 상태에 맞춰 버튼 갱신*/
+audio.addEventListener('play',     syncPlayUI);
+audio.addEventListener('playing',  syncPlayUI);
+audio.addEventListener('pause',    syncPlayUI);
+audio.addEventListener('ended',    syncPlayUI);
+document.addEventListener('DOMContentLoaded', () => {
+  syncPlayUI();
+});
+window.addEventListener('load', () => {
+  if (audio.autoplay && audio.paused) {
+    const p = audio.play();
+    if (p && typeof p.then === 'function') {
+      p.then(syncPlayUI).catch(() => setPlayUI(false));
+    }
+  }
 });
 
 playBtn.addEventListener('click', () => {
@@ -32,27 +83,16 @@ seekBar.addEventListener('input', () => {
 
   const p = (seekBar.value / seekBar.max) || 0;
   gaugeWrap.style.setProperty('--p', p);
+  
+  const preview = parseFloat(seek.value) || 0;
+  tCur.textContent = fmtTime(preview);
+  syncFillPx();
 
   updateGauge();
 });
+seekBar.addEventListener('change', syncFillPx);
+onMeta();
 
-audio.addEventListener('timeupdate', () => {
-  const percent = (audio.currentTime / audio.duration) * 100 || 0;
-  gaugeWrap.style.setProperty('--fill', percent + '%');
-
-  const p = (audio.currentTime / audio.duration) || 0;
-  gaugeWrap.style.setProperty('--p', p);
-
-  seekBar.value = audio.currentTime;
-  /*time.textContent = formatTime(audio.currentTime);*/
-});
-
-audio.addEventListener('loadedmetadata', () => {
-  seekBar.max = audio.duration;
-  const p = (audio.currentTime / audio.duration) || 0;
-  gaugeWrap.style.setProperty('--p', p);
-  updateGauge();
-});
 
 function updateGauge() {
   if (!audio.duration) return;
@@ -70,9 +110,42 @@ function updateGauge() {
   const p = (audio.currentTime / audio.duration) || 0;
   gaugeWrap.style.setProperty('--p', p);
 }
-function formatTime(sec) {
+
+function setPlayUI(isPlaying){
+  if (!playIcon) return;
+  playIcon.src = isPlaying ? PAUSE_SRC : PLAY_SRC;
+  playIcon.alt = isPlaying ? 'pause' : 'play';
+  playBtn?.setAttribute('aria-pressed', isPlaying ? 'true' : 'false');
+}
+function syncPlayUI(){ setPlayUI(!audio.paused && !audio.ended); }
+
+function fmtTime(sec){
+  if (!isFinite(sec) || sec < 0) return "00:00";
   sec = Math.floor(sec);
   const m = Math.floor(sec / 60);
   const s = sec % 60;
-  return m + ':' + (s < 10 ? '0' + s : s);
+  return String(m).padStart(2,'0') + ":" + String(s).padStart(2,'0');
+}
+
+function syncFillPx(){
+  const rect  = seekBar.getBoundingClientRect();
+  const styles= getComputedStyle(seekBar);
+  const thumb = parseFloat(styles.getPropertyValue('--thumb')) || 18;
+
+  const min = parseFloat(seekBar.min) || 0;
+  const max = parseFloat(seekBar.max) || 100;
+  const val = parseFloat(seekBar.value) || 0;
+  const p   = (val - min) / (max - min);
+
+  const fillPx = Math.round(p * (rect.width - thumb) + thumb / 2);
+  seekBar.style.setProperty('--fill', fillPx + 'px');
+}
+
+function onMeta(){
+  if (!audio || !isFinite(audio.duration)) return;
+  seekBar.max = audio.duration;
+  tAll.textContent = fmtTime(audio.duration);
+  tCur.textContent = fmtTime(audio.currentTime || 0);
+  seekBar.value = audio.currentTime || 0;
+  syncFillPx();
 }

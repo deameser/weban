@@ -45,7 +45,7 @@ body {
     position: relative;
     display: flex;
     align-items: center;
-    gap: 14px;
+    /* gap: 14px; */
     min-height: 24px;
     padding: 16px 16px;
     /*border-radius: 16px;*/
@@ -54,7 +54,7 @@ body {
 
     /* 배경 이미지/색 */
     background-image: var(--bg);
-    background-size: contain, cover;
+    background-size: contain, contain;
     background-position: center, center;
     background-color: transparent;
 
@@ -71,7 +71,7 @@ body {
 /* 맨 아래 3개 사이만 ‘붙이기’ → 마지막 두 개의 위여백을 0으로 */
 .main-index-btn:nth-last-child(2),
 .main-index-btn:last-child{
-  margin-top: 0;
+  margin-top: -3px;
 }
 /* 텍스트 */
 .index-btn-text {
