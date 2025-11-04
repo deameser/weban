@@ -78,9 +78,16 @@
             <div class="info-sound">
                 <audio id="info-sound-audio" src="./Sounds/bgm_1.ogg" preload="metadata" autoplay playsinline></audio>
                 <div class="info-sound-audio-player">
-                    <div class="gauge-wrap" id="gaugeWrap">
-                        <input id="seekBar" type="range" min="0" value="0" step="0.1">
+                    <div class="gauge-row">
+                        <span id="timeCurrent" class="time-label" aria-live="polite">00:00</span>
+
+                        <div class="gauge-wrap" id="gaugeWrap">
+                            <input id="seekBar" type="range" min="0" value="0" step="0.1">
+                        </div>
+                        
+                        <span id="timeTotal" class="time-label">00:00</span>
                     </div>
+                    
                     
                     <button id="backBtn" class="circle-btn" type="button">-10</button>
                     <button id="playBtn" class="circle-btn" type="button">
@@ -192,7 +199,7 @@
                 <!-- 페이지 공통 하단 -->
                 <div class="page-bottom">
                     <a class="page-top-btn" href="#top" id="goTopBtn"
-                        style="--bg: url('../Images/common/button_top.png'); --accent: #ffffff;"
+                        style="--bg: url('../Images/art_1_1/button_top.png'); --accent: #ffffff;"
                         aria-label="">
                         <!--
                         <span class="page-top-btn-text">
