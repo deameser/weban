@@ -5,11 +5,9 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title>Landing Page</title>
 
-    <!-- 기본 폰트 (선택사항: 안 써도 되지만 깔끔하게 보기 좋게 넣어둠) -->
-
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap"
         rel="stylesheet"
     />
 
@@ -75,124 +73,92 @@
                 </div>
             </div>  
             </section>
-            <div class="info-sound">
-                <audio id="info-sound-audio" src="./Sounds/bgm_1.ogg" preload="metadata" autoplay playsinline></audio>
-                <div class="info-sound-audio-player">
-                    <div class="gauge-row">
-                        <span id="timeCurrent" class="time-label" aria-live="polite">00:00</span>
-
-                        <div class="gauge-wrap" id="gaugeWrap">
-                            <input id="seekBar" type="range" min="0" value="0" step="0.1">
-                        </div>
-                        
-                        <span id="timeTotal" class="time-label">00:00</span>
-                    </div>
-                    
-                    
-                    <button id="backBtn" class="circle-btn" type="button">-10</button>
-                    <button id="playBtn" class="circle-btn" type="button">
-                        <img id="playIcon" src="./Images/common/button_next.png" alt="play">
-                    </button>
-                    <button id="forwardBtn" class="circle-btn" type="button">+10</button>
-                </div>
-            </div>
     </header>
     
     <main>
-        <!-- ================= Exhibit ================= -->
-        <section class="exhibit-container" id="exhibit-container">
+        <div class="info-sound">
+            <audio id="info-sound-audio" src="./Sounds/bgm_1.ogg" preload="metadata" autoplay playsinline></audio>
+            <div class="info-sound-audio-player">
+                <div class="gauge-row">
+                    <span id="timeCurrent" class="time-label" aria-live="polite">00:00</span>
+
+                    <div class="gauge-wrap" id="gaugeWrap">
+                        <input id="seekBar" type="range" min="0" value="0" step="0.1">
+                    </div>
+                    
+                    <span id="timeTotal" class="time-label">00:00</span>
+                </div>
+                
+                
+                <button id="backBtn" class="circle-btn" type="button">-10</button>
+                <button id="playBtn" class="circle-btn" type="button">
+                    <img id="playIcon" src="./Images/common/button_next.png" alt="play">
+                </button>
+                <button id="forwardBtn" class="circle-btn" type="button">+10</button>
+            </div>
+        </div>
+        <!-- ================= Art ================= -->
+        <section class="art-container" id="art-container">
             <div class="container">
-                <div class="exhibit-title">    
+                <div class="art-title">     
                     <!--
-                    <div class="exhibit-title-text">
-                        <h1 data-i18n="art_1_1_exhibit_title">전시 소개</h1>    
+                    <div class="art-title-text">
+                        <h1 data-i18n="exhibit_name_1">예술: 미디어스케이프 (Mediascape)</h1>
                     </div>
                     -->
                     <img
-                        class="exhibit-title-text-image"
+                        class="art-title-text-image"
                         src="Images/art_1_1/art_1_1_title_text.png"
                         alt=""
                     />
                 </div>
 
-                <div class="exhibit-title-logo">
+                <div class="art-image">
                     <img
-                        class="exhibit-title-logo-img"
+                        class="art-image-img"
                         src="Images/art_1_1/art_1_1_picture.png"
                         alt=""
                     />
                 </div>
-                
-                <div class="screen-division-line">
-                    <img
-                        class="screen-division-line-img"
-                        src="./Images/common/screen_division_line.png"
-                        alt=""
-                    />
-                </div>
-                <img
-                    class="exhibit-explain-text-1-image"
-                    src="Images/art_1_1/art_1_1_explain_text_1.png"
-                    alt=""
-                />
-                <div class="screen-division-line">
-                    <img
-                        class="screen-division-line-img"
-                        src="./Images/common/screen_division_line.png"
-                        alt=""
-                    />
-                </div>
-
-                <div class="screen-division-line">
-                    <img
-                        class="screen-division-line-img"
-                        src="./Images/common/screen_division_line.png"
-                        alt=""
-                    />
-                </div>
-                <img
-                    class="exhibit-explain-text-2-image"
-                    src="Images/art_1_1/art_1_1_explain_text_1.png"
-                    alt=""
-                />
-                <div class="screen-division-line">
-                    <img
-                        class="screen-division-line-img"
-                        src="./Images/common/screen_division_line.png"
-                        alt=""
-                    />
-                </div>
-                <!-- 전시 소개 -->
-                 <!--
-                <div class="exhibit-introduce">       
-                    <div class="exhibit-introduce-text">
-                        <h1 data-i18n="exhibit_introduce">전시 소개</h1>  
-                    </div>
+                <div class="art-link">
+                    <a class="art-link-btn" href="https://www.naver.com/"
+                        style="--bg: url('../Images/art_1_1/art_1_1_link_button.png'); --accent: #ffffff;"
+                        aria-label="">
+                        <!--
+                        <span class="art-link-btn-text">
+                            <h1 data-i18n="link_button_text">영상 보러가기</h1>
+                        </span>
+                        -->
+                    </a>
                 </div>
                 
-                <div class="screen-division-line">
-                    <img
-                        class="screen-division-line-img"
-                        src="./Images/common/screen_division_line.png"
-                        alt=""
-                    />
-                </div>
-                -->
-
-                <!-- 전시 설명 -->
-                 <!--
-                <div class="exhibit-explain">           
-                    <div class="exhibit-explain-text">
-                        <h1 data-i18n="exhibit_explain">전시 설명</h1>  
+                <!-- 작가명, 제목 -->
+                <!-- <div class="artist-introduce">           
+                    <div class="artist-introduce-text">                        
+                        <h1 class="artise_name" data-i18n="artist_name_1">작가</h1>
+                        <h1 class="art_title" data-i18n="art_name_1">제목</h1>                       
                     </div>
-                </div>
-
-                <div class="screen-division-line">
+                </div> -->
+                <div class="art-name">
                     <img
-                        class="screen-division-line-img"
-                        src="./Images/common/screen_division_line.png"
+                        class="art-name-text-image"
+                        src="Images/art_1_1/art_1_1_name_text.png"
                         alt=""
                     />
+                </div>
+                <!-- 작품 설명 -->
+                <div class="art-explain-text-bg">
+                    <img
+                        class="art-explain-text-image"
+                        src="Images/art_1_1/art_1_1_explain_text.png"
+                        alt=""
+                    />
+                </div>
+                <!--
+                <div class="art-explain">           
+                    <div class="art-explain-text">
+                        <h1 data-i18n="art_explain_1">작품 설명</h1>
+                    </div>
                 </div>
                 -->
 
@@ -220,8 +186,8 @@
                 <!-- 페이지 공통 하단 고정 -->
                 <div class="page-fixed-bottom">
                     <div class="page-fixed-bottom-inner">
-                        <a class="page-before-btn" href="./page_schedule.html"
-                            style="--bg: url('../Images/common/button_prev.png'); --accent: #ffffff;"
+                        <a class="page-before-btn" href="./page_exhibit_intro_2.html"
+                            style="--bg: url('../Images/art_1_1/button_prev.png'); --accent: #ffffff;"
                             aria-label="">
                             <!--
                             <span class="page-before-btn-text">
@@ -231,7 +197,7 @@
                         </a>
                         
                         <a class="page-after-btn" href="./page_art_1_2.html"
-                            style="--bg: url('../Images/common/button_next.png'); --accent: #ffffff;"
+                            style="--bg: url('../Images/art_1_1/button_next.png'); --accent: #ffffff;"
                             aria-label="">
                             <!--
                             <span class="page-after-btn-text">

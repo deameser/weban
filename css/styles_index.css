@@ -68,12 +68,11 @@ body {
     /* box-shadow: 0 1px 2px rgba(0,0,0,.06);
     transition: transform .15s ease, box-shadow .15s ease; */
 }
-/* 기본 간격: 바로 다음 형제에게만 8px 위여백 */
 .main-index-btn + .main-index-btn{
   margin-top: 0px;
 }
 
-/* 맨 아래 3개 사이만 ‘붙이기’ → 마지막 두 개의 위여백을 0으로 */
+/* 마지막 두 개의 위여백을 0으로 */
 .main-index-btn:nth-last-child(2),
 .main-index-btn:last-child{
   margin-top: -8px;

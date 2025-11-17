@@ -41,7 +41,7 @@ body {
   box-sizing: border-box;
 }
 
-/* 작품 설명 */
+/* 경로 설명 */
 .directions-explain{ 
     position: relative; 
     padding: 30px;
