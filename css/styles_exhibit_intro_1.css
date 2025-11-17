@@ -1,9 +1,9 @@
 body {
     margin: 0;
     background-image: 
-      url('../Images/art_1_1/art_1_1_bg.png');
+      url('../Images/exhibit_intro_1/exhibit_intro_1_bg.png');
     background-repeat: no-repeat;
-    background-size: min(600vw, 660px) auto;
+    background-size: min(600vw, 374px) auto;
     background-position: top center;
     background-color: #000000;
     padding-bottom: 140px;
@@ -18,13 +18,13 @@ body {
 .exhibit-title{ 
     position: relative; 
     height: 50px; 
-    padding: 30px;
     margin-top: 50px;
 }
 .exhibit-title-text-image{
     display: flex;
-    width: 130px;
-    margin: 10px auto;
+    width: 62px;
+    height: 23px;
+    margin: 0px auto;
 }
 .exhibit-title-text{
     position: relative; z-index: 1;
@@ -36,11 +36,10 @@ body {
 
 .exhibit-title-logo{
     margin-top: 0px;
-    padding: 30px;
 }
 .exhibit-title-logo-img{
-    width: 160px;
-    height: 160px;
+    width: 104px;
+    height: 104px;
     display: flex;
     object-fit: cover;
     justify-content: center; /* 수평 가운데 */
@@ -54,16 +53,48 @@ body {
   }
 }
 
-.exhibit-explain-text-1-image {
+.exhibit-intro-text-1-bg{
+    position: relative; 
+    width: 344px;
+    height: 315px; 
+    margin: 54px auto;
     display: flex;
-    margin: 30px auto;
+    flex-direction: column;
+    /*align-items: center;*/
+    /* align-items: flex-start; */
+    background-image: url('../Images/exhibit_intro_1/exhibit_intro_explain_text_1_bg.png');
+    background-repeat: no-repeat;   /* 반복 안 함 */
+    background-position: center;    /* 가운데 정렬 */
+    z-index: 0;
+}
+.exhibit-intro-text-2-bg{
+    position: relative; 
+    width: 344px;
+    height: 568px; 
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
+    /* align-items: flex-start; */
+    background-image: url('../Images/exhibit_intro_1/exhibit_intro_explain_text_2_bg.png');
+    background-repeat: no-repeat;   /* 반복 안 함 */
+    background-position: center;    /* 가운데 정렬 */
+    z-index: 0;
+}
+.exhibit-intro-text-1-image {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 25px;
     width: 287px;
+    z-index: 2;
 }
 
-.exhibit-explain-text-2-image {
+.exhibit-intro-text-2-image {
     display: flex;
-    margin: 30px auto;
+    margin-top: 50px;
+    margin-left: 30px;
     width: 287px;
+    z-index: 2;
 }
 
 /* 전시 소개 */
