@@ -73,65 +73,58 @@
                 </div>
             </div>  
             </section>
-            <div class="info-sound">
-                <audio id="info-sound-audio" src="./Sounds/bgm_1.ogg" preload="metadata" autoplay playsinline></audio>
-                <div class="info-sound-audio-player">
-                    <div class="gauge-row">
-                        <span id="timeCurrent" class="time-label" aria-live="polite">00:00</span>
-
-                        <div class="gauge-wrap" id="gaugeWrap">
-                            <input id="seekBar" type="range" min="0" value="0" step="0.1">
-                        </div>
-                        
-                        <span id="timeTotal" class="time-label">00:00</span>
-                    </div>
-                    
-                    <button id="backBtn" class="circle-btn" type="button">-10</button>
-                    <button id="playBtn" class="circle-btn" type="button">
-                        <img id="playIcon" src="./Images/common/button_next.png" alt="play">
-                    </button>
-                    <button id="forwardBtn" class="circle-btn" type="button">+10</button>
-                </div>
-            </div>
     </header>
     
     <main>
-        <div class="schedule-division-line">
-            <img
-                class="schedule-division-line-img"
-                src="./Images/schedule/schedule_line.png"
-                alt=""
-            />
+        <div class="info-sound">
+            <audio id="info-sound-audio" src="./Sounds/bgm_1.ogg" preload="metadata" autoplay playsinline></audio>
+            <div class="info-sound-audio-player">
+                <div class="gauge-row">
+                    <span id="timeCurrent" class="time-label" aria-live="polite">00:00</span>
+
+                    <div class="gauge-wrap" id="gaugeWrap">
+                        <input id="seekBar" type="range" min="0" value="0" step="0.1">
+                    </div>
+                    
+                    <span id="timeTotal" class="time-label">00:00</span>
+                </div>
+                
+                <button id="backBtn" class="circle-btn" type="button">-10</button>
+                <button id="playBtn" class="circle-btn" type="button">
+                    <img id="playIcon" src="./Images/common/button_next.png" alt="play">
+                </button>
+                <button id="forwardBtn" class="circle-btn" type="button">+10</button>
+            </div>
         </div>
         <!-- ================= Schedule ================= -->
         <section class="schedule-container" id="schedule-container">
             <div class="container">
-                <div class="schedule-explain">
-                    <img class="schedule-explain-img" src="./Images/schedule/schedule_info.png" alt="">
-                </div>
-                <!--
-                <div class="schedule-explain">
-                    <h1 class="schedule-explain-name" data-i18n="schedule_explain_name"> 아뜰리에노들 미디어아트 상영 시간표</h1>
-                    <div class="schedule-explain-sub">
-                        <h1 class="schedule-explain-sub-left">전시 기간</h1>
-                        <img class="schedule-explain-sub-icon" src="./Images/schedule/schedule_square.png" alt="">
-                        <h1 class="schedule-explain-sub-right">2025.11.01 ~ 2025.12.15</h1>
-                    </div>
-                    <div class="schedule-explain-sub">
-                        <h1 class="schedule-explain-sub-left">상영 장소</h1>
-                        <img class="schedule-explain-sub-icon" src="./Images/schedule/schedule_square.png" alt="">
-                        <h1 class="schedule-explain-sub-right">노들섬 아트라운지 미디어월</h1>
-                    </div>
-                    <div class="schedule-explain-sub">
-                        <h1 class="schedule-explain-sub-left">상영 시간</h1>
-                        <img class="schedule-explain-sub-icon" src="./Images/schedule/schedule_square.png" alt="">
-                        <h1 class="schedule-explain-sub-right">매일 11:00 ~ 21:00 (10분 간격 순환 상영)</h1>
-                    </div>
-                </div>
-                -->
                 <div class="schedule">
+                    <div class="schedule-explain">
+                        <img class="schedule-explain-img" src="./Images/schedule/schedule_info.png" alt="">
+                    </div>
+                    <!--
+                    <div class="schedule-explain">
+                        <h1 class="schedule-explain-name" data-i18n="schedule_explain_name"> 아뜰리에노들 미디어아트 상영 시간표</h1>
+                        <div class="schedule-explain-sub">
+                            <h1 class="schedule-explain-sub-left">전시 기간</h1>
+                            <img class="schedule-explain-sub-icon" src="./Images/schedule/schedule_square.png" alt="">
+                            <h1 class="schedule-explain-sub-right">2025.11.01 ~ 2025.12.15</h1>
+                        </div>
+                        <div class="schedule-explain-sub">
+                            <h1 class="schedule-explain-sub-left">상영 장소</h1>
+                            <img class="schedule-explain-sub-icon" src="./Images/schedule/schedule_square.png" alt="">
+                            <h1 class="schedule-explain-sub-right">노들섬 아트라운지 미디어월</h1>
+                        </div>
+                        <div class="schedule-explain-sub">
+                            <h1 class="schedule-explain-sub-left">상영 시간</h1>
+                            <img class="schedule-explain-sub-icon" src="./Images/schedule/schedule_square.png" alt="">
+                            <h1 class="schedule-explain-sub-right">매일 11:00 ~ 21:00 (10분 간격 순환 상영)</h1>
+                        </div>
+                    </div>
+                    -->
                     <!-- 시간표 -->
-                     
+                    
                     <div class="schedule-info-image">
                         <img class="schedule-info-image-img" src="./Images/schedule/schedule_list.png" alt="">
                     </div>
@@ -231,22 +224,15 @@
                     -->
                     <!-- 시간표 종료 -->
 
-                    <div class="schedule-division-line">
-                        <img
-                            class="schedule-division-line-img"
-                            src="./Images/schedule/schedule_line.png"
-                            alt=""
-                        />
-                    </div>
-                    <div class="schedule-logo">
-                        <img
-                            class="schedule-logo-img"
-                            src="./Images/schedule/atelier_nodeul_logo.png"
-                            alt=""
-                        />
-                    </div>
                 </div>
 
+                <div class="schedule-logo">
+                    <img
+                        class="schedule-logo-img"
+                        src="./Images/schedule/atelier_nodeul_logo.png"
+                        alt=""
+                    />
+                </div>
                 <!-- 페이지 공통 하단 -->
                 <div class="page-bottom">
                     <a class="page-top-btn" href="#top" id="goTopBtn"
@@ -272,7 +258,7 @@
                 <div class="page-fixed-bottom">
                     <div class="page-fixed-bottom-inner">
                         <a class="page-before-btn" href="./page_intro.html"
-                            style="--bg: url('../Images/common/button_prev.png'); --accent: #ffffff;"
+                            style="--bg: url('../Images/schedule/button_prev.png'); --accent: #ffffff;"
                             aria-label="">
                             <!--
                             <span class="page-before-btn-text">
@@ -281,8 +267,8 @@
                             -->
                         </a>
                         
-                        <a class="page-after-btn" href="./page_art_1_1.html"
-                            style="--bg: url('../Images/common/button_next.png'); --accent: #ffffff;"
+                        <a class="page-after-btn" href="./page_schedule_2.html"
+                            style="--bg: url('../Images/schedule/button_next.png'); --accent: #ffffff;"
                             aria-label="">
                             <!--
                             <span class="page-after-btn-text">

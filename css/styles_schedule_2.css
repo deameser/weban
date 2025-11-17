@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    background-image: 
+      url('../Images/art_1_1/art_1_1_bg.png');
+    background-repeat: no-repeat;
+    background-size: min(600vw, 660px) auto;
+    background-position: top center;
+    background-color: #000000;
+    padding-bottom: 140px;
+}
+.page_exhibit{
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    margin: 0;
+}
+
+.exhibit-title{ 
+    position: relative; 
+    height: 50px; 
+    padding: 30px;
+    margin-top: 50px;
+}
+.exhibit-title-text-image{
+    display: flex;
+    width: 130px;
+    margin: 10px auto;
+}
+.exhibit-title-text{
+    position: relative; z-index: 1;
+    height: 100%;
+    font-size: 0.8rem;
+    display: grid; place-items: center;
+    text-align: center; color: #ffffff; padding: 0px;
+}
+
+.exhibit-title-logo{
+    margin-top: 0px;
+    padding: 30px;
+}
+.exhibit-title-logo-img{
+    width: 160px;
+    height: 160px;
+    display: flex;
+    object-fit: cover;
+    justify-content: center; /* 수평 가운데 */
+
+    margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .exhibit-title-logo-img {
+    max-width: var(--container-max); 
+    margin: 0 auto;                  /* 가운데 정렬 */
+  }
+}
+
+.exhibit-explain-text-1-image {
+    display: flex;
+    margin: 30px auto;
+    width: 287px;
+}
+
+.exhibit-explain-text-2-image {
+    display: flex;
+    margin: 30px auto;
+    width: 287px;
+}
+
+/* 전시 소개 */
+.exhibit-introduce{ 
+    position: relative; 
+    margin-left: 30px;
+}
+.exhibit-introduce-text{
+    position: static;
+    display: block;
+    text-align: left;
+    color: #ffffff;      
+    z-index: 2;
+
+    max-width: min(100%, var(--container-max, 660px));
+    margin: 0 auto;
+}
+.exhibit-introduce-text h1 {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 400;   /* 100~300 중에 하나 */
+  font-size: 0.8rem;
+  margin: 20px 5px;
+}
+
+/* 전시 설명 */
+.exhibit-explain{ 
+    position: relative; 
+    margin-left: 30px;
+}
+.exhibit-explain-img{
+    display: block;
+    width: min(100%, var(--container-max, 660px));
+    height: 500px;
+    margin: 0 auto;
+}
+.exhibit-explain-text{
+    position: static;
+    display: block;
+    text-align: left;
+    color: #ffffff;      
+    z-index: 2;
+
+    max-width: min(100%, var(--container-max, 660px));
+    margin: 0 auto;
+}
+.exhibit-explain-text h1 {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 400;   /* 100~300 중에 하나 */
+  font-size: 0.8rem;
+  margin: 20px 5px;
+}

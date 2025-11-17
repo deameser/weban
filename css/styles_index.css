@@ -50,7 +50,7 @@ body {
     width: 345px;
     min-height: 24px;
     /* height: 43px; */
-    padding: 16px 16px;
+    padding: 13px 16px;
     /*border-radius: 16px;*/
     text-decoration: none;
     color: #111;
@@ -76,7 +76,7 @@ body {
 /* 맨 아래 3개 사이만 ‘붙이기’ → 마지막 두 개의 위여백을 0으로 */
 .main-index-btn:nth-last-child(2),
 .main-index-btn:last-child{
-  margin-top: -14px;
+  margin-top: -8px;
 }
 /* 텍스트 */
 .index-btn-text {
@@ -109,4 +109,28 @@ body {
   color: #ffffff;     /* 예: 좀 더 밝게 */
   line-height: 0.4;
   margin-left: 4px;   /* 첫 번째보다 덜 띄우기 */
+}
+
+.index-btn-text-1 {
+  margin-left: 30px;
+}
+
+.index-btn-text-2 {
+  margin-left: 30px;
+}
+
+.index-btn-text-3 {
+  margin-left: 30px;
+}
+
+.index-btn-text-4 {
+  margin-left: 30px;
+}
+
+.index-btn-text-5 {
+  margin-left: 30px;
+}
+
+.index-btn-text-6 {
+  margin-left: 30px;
 }

@@ -43,12 +43,17 @@ body {
 /* 시간표 */
 .schedule{
     position: relative; 
-    height: auto; 
+    width: 344px;
+    height: 367px; 
     margin: 24px auto;
-  display: flex;
-  flex-direction: column;
-  /*align-items: center;*/
-  align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
+    /* align-items: flex-start; */
+    background-image: url('../Images/schedule/schedule_info_bg.png');
+    background-repeat: no-repeat;   /* 반복 안 함 */
+    background-position: center;    /* 가운데 정렬 */
+    z-index: 0;
 }
 .schedule-explain-name
 {
@@ -63,7 +68,7 @@ body {
 .schedule-explain{
   width: 100%;
   max-width: 660px; 
-  margin: 0 auto;
+  margin: 30px auto;
 }
 
 .schedule-explain-img{
@@ -169,7 +174,7 @@ body {
   margin-right: 12px;
 }
 .schedule-logo{
-    margin: 20px auto 12px;
+    margin: 20px auto;
 }
 .schedule-line-img{
     width: min(100%, 480px);
@@ -199,9 +204,10 @@ body {
 .schedule-logo-img{
     width: 108px;
     height: 85px;
-    display: flex;
-    object-fit: cover;
-    justify-content: center; /* 수평 가운데 */
+    display: block;
+    /* object-fit: cover; */
+    /*justify-content: center;*/ /* 수평 가운데 */
+    margin: 0 auto;
 }
 @media (min-width: 768px) {
   .schedule-logo-img {

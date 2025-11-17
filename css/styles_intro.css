@@ -8,7 +8,9 @@ body {
     background-color: #000000;
     padding-bottom: 140px;
 }
-
+.intro-container{
+    margin-top: 0;
+}
 .page_intro{
     min-height: 100vh;
     display: grid;
@@ -17,7 +19,7 @@ body {
 }
 .intro-title{ 
     position: relative; 
-    height: 140px; 
+    height: 120px; 
     padding: 20px;
     margin: 0 auto;
     display: flex;
@@ -26,21 +28,29 @@ body {
     position: relative;
     width: 107px;
     height: 86px;
-    margin: 80px auto;
+    margin: 20px auto;
     margin-bottom: 0px;
 }
 
 .intro-des{ 
     position: relative; 
     padding: 30px;
-    margin-top: -50px;
+    width: 344px;
+    height: 219px;
+    margin-top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .intro-des-img{
+    position: absolute;
     display: block;
-    width: min(100%, var(--container-max, 660px));
-    height: 500px;
-    margin: 0 auto;
-    }
+    width: 344px;
+    height: 219px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0px auto;
+    z-index: 1;
+}
 .intro-des-text{
     position: static;
     display: block;
@@ -61,8 +71,40 @@ body {
 }
 
 .intro-des-text-image{
+    position: absolute; 
+    display: block;
+    width: 271px;
+    height: 157px;
+    margin-top: 30px;
+    margin-left: 20px;
+    z-index: 2;
+}
+
+.intro-des-2{ 
     position: relative; 
-    display: flex;
-    width: 257px;
-    margin: 30px auto;
+    padding: 30px;
+    width: 344px;
+    height: 210px;
+    margin-top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.intro-des-img-2{
+    position: absolute;
+    display: block;
+    width: 344px;
+    height: 210px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0px auto;
+    z-index: 1;
+}
+.intro-des-text-image-2{
+    position: relative; 
+    display: block;
+    width: 295px;
+    height: 140px;
+    margin-top: 30px;
+    margin-left: 20px;
+    z-index: 2;
 }
