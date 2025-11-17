@@ -3,7 +3,7 @@ body {
     background-image: 
       url('../Images/exhibit_intro_1/exhibit_intro_1_bg.png');
     background-repeat: no-repeat;
-    background-size: min(600vw, 374px) auto;
+    background-size: min(600vw, 540px) auto;
     background-position: top center;
     background-color: #000000;
     padding-bottom: 140px;
