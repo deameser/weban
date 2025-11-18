@@ -22,19 +22,21 @@ body {
 }
 
 .lang-dropdown select{
-  padding: 8px 32px 8px 12px;
+  position: absolute;
+  padding: 8px 20px 8px 8px;
   border: 1px solid transparent;
   /*border-radius: 8px;*/
   background: transparent;
   outline: none;
   cursor: pointer;
-  color: #7a7a7a;
+  color: transparent;
+  /* color: #7a7a7a; */
   font-size: 1.1rem;
   
   background-image: url('../Images/schedule/lang_arrow_icon.png');
   background-repeat: no-repeat;
   background-position: right 10px center;  /* 오른쪽 안쪽에 배치 */
-  background-size: 14px auto;
+  background-size: 9px auto;
   
   appearance: none;
   -webkit-appearance: none;
