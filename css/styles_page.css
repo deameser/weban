@@ -335,7 +335,7 @@ header.nav{
     align-items: center;
     /*gap: 14px;*/
     width: 15px;
-    min-height: 20px;
+    height: 10px;
     /*padding: 16px 18px;*/
     text-decoration: none;
     color: transparent;
@@ -351,7 +351,7 @@ header.nav{
     isolation: isolate;
     box-shadow: 0 1px 2px rgba(0,0,0,.06);
     transition: transform .15s ease, box-shadow .15s ease;
-    margin: 20px auto;
+    margin: 0px auto;
 }
 .page-top-btn h1{
     font-weight: 700;

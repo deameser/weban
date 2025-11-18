@@ -3,7 +3,8 @@ body {
     background-image: 
       url('../Images/directions/directions_bg.png');
     background-repeat: no-repeat;
-    background-size: min(600vw, 660px) auto;
+    background-size: min(600vw, 560px) 983px;
+    /* background-size: min(600vw, 660px) auto; */
     background-position: top center;
     background-color: #000000;
     padding-bottom: 140px;
@@ -59,4 +60,8 @@ body {
 .directions-explain-text h1{
     font-size: 1.0rem;
     font-weight: 300;
+}
+
+.page-bottom{ 
+    margin-top: 100px;
 }
