@@ -6,7 +6,7 @@ body {
     background-size: min(600vw, 660px) auto;
     background-position: top center;
     background-color: #000000;
-    padding-bottom: 140px;
+    padding-bottom: 0px;
 }
 .page_art_1_2{
     min-height: 100vh;
@@ -187,3 +187,7 @@ body {
     font-size: 1.0rem;
     font-weight: 300;
 } */
+.page-bottom{ 
+    margin-top: 180px;
+    margin-bottom: 15px;
+}

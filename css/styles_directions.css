@@ -7,7 +7,7 @@ body {
     /* background-size: min(600vw, 660px) auto; */
     background-position: top center;
     background-color: #000000;
-    padding-bottom: 140px;
+    padding-bottom: 0px; /* 140 /*
 }
 .page_directions{
     min-height: 100vh;
@@ -16,21 +16,30 @@ body {
     margin: 0;
 }
 
-
+.directions-title{
+    position: relative; 
+    display: flex;
+    width: 63px;
+    height: 16px;
+    margin: 10px auto;
+}
 .map-image{
-    padding: 30px;
+    padding: 0px;
+    margin: 15px auto;
 }
 .map-image-img{
-    width: 100%;
+    width: 345px;
+    height: 222px;
     height: auto;
     display: flex;
     object-fit: cover;
+    margin: 0px auto;
     justify-content: center; /* 수평 가운데 */
 }
 @media (min-width: 768px) {
   .art-image-img {
     max-width: var(--container-max); 
-    margin: 0 auto;                  /* 가운데 정렬 */
+    margin: 0 auto;
   }
 }
 
@@ -45,7 +54,7 @@ body {
 /* 경로 설명 */
 .directions-explain{ 
     position: relative; 
-    padding: 30px;
+    margin: 30px auto;
 }
 .directions-explain-text{
     position: static;
@@ -63,5 +72,6 @@ body {
 }
 
 .page-bottom{ 
-    margin-top: 100px;
+    margin-top: 180px;
+    margin-bottom: 15px;
 }
