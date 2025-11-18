@@ -6,7 +6,7 @@ body {
     background-size: min(600vw, 660px) auto;
     background-position: top center;
     background-color: #000000;
-    padding-bottom: 140px;
+    padding-bottom: 0px;
 }
 .page_exhibit{
     min-height: 100vh;
@@ -145,4 +145,9 @@ body {
   font-weight: 400;   /* 100~300 중에 하나 */
   font-size: 0.8rem;
   margin: 20px 5px;
+}
+
+.page-bottom{ 
+    margin-top: 20px;
+    margin-bottom: 15px;
 }

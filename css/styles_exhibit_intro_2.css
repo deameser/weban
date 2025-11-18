@@ -6,7 +6,7 @@ body {
     background-size: min(600vw, 660px) auto;
     background-position: top center;
     background-color: #000000;
-    padding-bottom: 140px;
+    padding-bottom: 0px;
 }
 .container{
     position: relative; 
@@ -58,4 +58,8 @@ body {
 }
 .exhibit-btn-text {
     margin-left: 20px;
+}
+.page-bottom{ 
+    margin-top: 40px;
+    margin-bottom: 15px;
 }

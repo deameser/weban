@@ -6,8 +6,9 @@ body {
   background-size: min(600vw, 540px) auto;
   background-position: top center;
   background-color: #000000;
-  padding-bottom: calc(var(--bottom-h, 64px) + env(safe-area-inset-bottom));
+  /*padding-bottom: calc(var(--bottom-h, 64px) + env(safe-area-inset-bottom));*/
   /* padding-bottom: 140px; */
+    padding-bottom: 0px;
 }
 .page_schedule{
     min-height: 100vh;
@@ -214,4 +215,8 @@ body {
     max-width: var(--container-max); 
     margin: 0 auto;                  /* 가운데 정렬 */
   }
+}
+.page-bottom{ 
+    margin-top: 40px;
+    margin-bottom: 15px;
 }

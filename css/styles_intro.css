@@ -6,7 +6,7 @@ body {
     background-size: min(600vw, 660px) auto;
     background-position: top center;
     background-color: #000000;
-    padding-bottom: 140px;
+    padding-bottom: 0px;
 }
 .intro-container{
     margin-top: 0;
@@ -28,7 +28,7 @@ body {
     position: relative;
     width: 107px;
     height: 86px;
-    margin: 20px auto;
+    margin: 30px auto;
     margin-bottom: 0px;
 }
 
@@ -37,7 +37,7 @@ body {
     padding: 30px;
     width: 344px;
     height: 219px;
-    margin-top: 0px;
+    margin-top: 5px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -85,7 +85,7 @@ body {
     padding: 30px;
     width: 344px;
     height: 210px;
-    margin-top: 0px;
+    margin-top: -20px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -107,4 +107,8 @@ body {
     margin-top: 30px;
     margin-left: 20px;
     z-index: 2;
+}
+.page-bottom{ 
+    margin-top: 20px;
+    margin-bottom: 15px;
 }

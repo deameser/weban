@@ -92,7 +92,11 @@ body {
 }
 .main-title-back-button-img {
   width: 8px;
-  height: 14px;
+  height: 13px;
+}
+.main-title-back-button-text-img{
+  width: 41px;
+  height: 13px;
 }
 .page-before-btn-text h1 {
   font-size: 1.2rem;
