@@ -1,36 +1,32 @@
 document.addEventListener('DOMContentLoaded', function() {
     const selectLang = document.getElementById('langSelect');
     const selectLangIcon = document.getElementById('langSelectIcon');
-    // const langIcons = {
-    //     ko: './Images/common/lang_text_kor.png',
-    //     en: './Images/common/lang_text_eng.png',
-    //     ja: './Images/common/lang_text_jpn.png'
-    // }; 
-    function updateLangIcon(lang) {
-        if (!selectLangIcon) return;
-        selectLangIcon.src = langIcons[lang] || langIcons['ko'];
-    }
+    let langIcons = {
+        ko: './Images/common/lang_text_kor.png',
+        en: './Images/common/lang_text_eng.png',
+        ja: './Images/common/lang_text_jpn.png'
+    }; 
     if(selectLang)
     {
         const path = window.location.pathname;
         const isPage2 = path.includes('page_schedule');
 
-        let langIcons;
-        if (isPage2) {
-            // directions 페이지에서만 다르게 쓰고 싶은 아이콘 경로
-            langIcons = {
-                ko: './Images/schedule/lang_text_kor.png',
-                en: './Images/schedule/lang_text_eng.png',
-                ja: './Images/schedule/lang_text_jpn.png',
-            };
-            } else {
+        // let langIcons;
+        // if (isPage2) {
+        //     // directions 페이지에서만 다르게 쓰고 싶은 아이콘 경로
+        //     langIcons = {
+        //         ko: './Images/schedule/lang_text_kor.png',
+        //         en: './Images/schedule/lang_text_eng.png',
+        //         ja: './Images/schedule/lang_text_jpn.png',
+        //     };
+        // } else {
             // 그 외 페이지(혹시 추가되면)용 기본값
             langIcons = {
                 ko: './Images/common/lang_text_kor.png',
                 en: './Images/common/lang_text_eng.png',
                 ja: './Images/common/lang_text_jpn.png',
             };
-        }
+        // }
 
         const saved = localStorage.getItem("lang") || "ko";
         selectLang.value = saved;
@@ -44,6 +40,10 @@ document.addEventListener('DOMContentLoaded', function() {
             localStorage.setItem("lang", lang);
             updateLangIcon(saved);
         });
+    }
+    function updateLangIcon(lang) {
+        if (!selectLangIcon) return;
+        selectLangIcon.src = langIcons[lang] || langIcons['ko'];
     }
     
     var btn = document.getElementById('goTopBtn');

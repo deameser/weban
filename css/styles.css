@@ -96,7 +96,7 @@ body {
 }
 .main-title-back-button-text-img{
   width: 41px;
-  height: 13px;
+  height: 18px;
 }
 .page-before-btn-text h1 {
   font-size: 1.2rem;
@@ -224,6 +224,37 @@ body {
 }
 
 
+@font-face {
+  font-family: 'Inter';   /* 내가 붙일 이름 */
+  src: url('../Fonts/SeoulAlrimTTF-Medium.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../Fonts/SeoulAlrimTTF-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../Fonts/SeoulAlrimTTF-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../Fonts/SeoulAlrimTTF-Heavy.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
 
 [data-i18n] {
   white-space: pre-line;

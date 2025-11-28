@@ -5,12 +5,6 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title>Landing Page</title>
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
-        rel="stylesheet"
-    />
-
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/styles_page.css" />
     <link rel="stylesheet" href="./css/styles_schedule.css" />
@@ -41,12 +35,12 @@
                         aria-label="">
                         <img
                             class="main-title-back-button-img"
-                            src="./Images/schedule/button_back_icon.png"
+                            src="./Images/common/button_back_icon.png"
                             alt=""
                         />
                         <img
                             class="main-title-back-button-text-img"
-                            src="./Images/schedule/button_back_text.png"
+                            src="./Images/common/button_back_text.png"
                             alt=""
                         />
                         <!-- <span class="page-before-btn-text">
@@ -57,7 +51,7 @@
                 <div class="main-title-overlay-center">
                     <img
                         class="main-title-center-logo-img"
-                        src="./Images/schedule/atelier_nodeul_logo_small.png"
+                        src="./Images/common/atelier_nodeul_logo_small.png"
                         alt=""
                     />
                 </div>
@@ -65,16 +59,15 @@
                 <div class="main-title-overlay-right">
                     <img
                         class="lang-dropdown-icon-img"
-                        src="./Images/schedule/lang_icon.png"
+                        src="./Images/common/lang_icon.png"
                         alt=""
                     />
                     <div class="lang-dropdown" id="langDropdown">
                         <select id="langSelect">
                             <option value="ko">KOR</option>
                             <option value="en">ENG</option>
-                            <option value="ja">JPN</option>
                         </select>
-                        <img id="langSelectIcon" src="./Images/schedule/lang_text_kor.png" alt="selectIcon" width="31" height="13">
+                        <img id="langSelectIcon" src="./Images/common/lang_text_kor.png" alt="selectIcon" width="31" height="13">
                     </div>
                 </div>
             </div>  
@@ -106,143 +99,142 @@
         <section class="schedule-container" id="schedule-container">
             <div class="container">
                 <div class="schedule">
-                    <div class="schedule-explain">
+                    <!-- <div class="schedule-explain">
                         <img class="schedule-explain-img" src="./Images/schedule/schedule_info.png" alt="">
-                    </div>
-                    <!--
+                    </div> -->
                     <div class="schedule-explain">
                         <h1 class="schedule-explain-name" data-i18n="schedule_explain_name"> 아뜰리에노들 미디어아트 상영 시간표</h1>
                         <div class="schedule-explain-sub">
-                            <h1 class="schedule-explain-sub-left">전시 기간</h1>
-                            <img class="schedule-explain-sub-icon" src="./Images/schedule/schedule_square.png" alt="">
-                            <h1 class="schedule-explain-sub-right">2025.11.01 ~ 2025.12.15</h1>
+                            <h1 class="schedule-explain-sub-left" data-i18n="schedule_explain_date">전시 기간</h1>
+                            <!-- <img class="schedule-explain-sub-icon" src="./Images/schedule/schedule_square.png" alt="">
+                            <h1 class="schedule-explain-sub-right">2025.11.01 ~ 2025.12.15</h1> -->
                         </div>
                         <div class="schedule-explain-sub">
-                            <h1 class="schedule-explain-sub-left">상영 장소</h1>
-                            <img class="schedule-explain-sub-icon" src="./Images/schedule/schedule_square.png" alt="">
-                            <h1 class="schedule-explain-sub-right">노들섬 아트라운지 미디어월</h1>
+                            <h1 class="schedule-explain-sub-left" data-i18n="schedule_explain_pos">상영 장소</h1>
+                            <!-- <img class="schedule-explain-sub-icon" src="./Images/schedule/schedule_square.png" alt="">
+                            <h1 class="schedule-explain-sub-right" data-i18n="schedule_explain_pos_detail">노들섬 아트라운지 미디어월</h1> -->
                         </div>
                         <div class="schedule-explain-sub">
-                            <h1 class="schedule-explain-sub-left">상영 시간</h1>
-                            <img class="schedule-explain-sub-icon" src="./Images/schedule/schedule_square.png" alt="">
-                            <h1 class="schedule-explain-sub-right">매일 11:00 ~ 21:00 (10분 간격 순환 상영)</h1>
+                            <h1 class="schedule-explain-sub-left" data-i18n="schedule_explain_time">상영 시간</h1>
+                            <!-- <img class="schedule-explain-sub-icon" src="./Images/schedule/schedule_square.png" alt="">
+                            <h1 class="schedule-explain-sub-right" data-i18n="schedule_explain_time_detail">매일 11:00 ~ 21:00 (10분 간격 순환 상영)</h1> -->
                         </div>
                     </div>
-                    -->
                     <!-- 시간표 -->
                     
                     <div class="schedule-info-image">
                         <img class="schedule-info-image-img" src="./Images/schedule/schedule_list.png" alt="">
                     </div>
-                    <!--
-                    <div class="schedule-info">
-                        <h1 class="schedule-num"> </h1>
-                        <h1 class="schedule-name" data-i18n="schedule_name">작품명</h1>
-                        <h1 class="schedule-time" data-i18n="schedule_time">상영 시간</h1>
-                    </div>
-                    <img
-                        class="schedule-line-img"
-                        src="./Images/schedule/schedule_line.png"
-                        alt=""
-                    />
-                    <div class="schedule-info">
-                        <h1 class="schedule-num">1</h1>
-                        <h1 class="schedule-name">빛의 숨결 (Breath of Light)</h1>
-                        <h1 class="schedule-time">11:00</h1>
-                    </div>
+                    
+                    <!-- <div class="schedule-info-all">
+                        <div class="schedule-info">
+                            <h1 class="schedule-num"> </h1>
+                            <h1 class="schedule-name-title" data-i18n="schedule_name">작품명</h1>
+                            <h1 class="schedule-time-title" data-i18n="schedule_time">상영 시간</h1>
+                        </div>
+                        <img
+                            class="schedule-line-img"
+                            src="./Images/schedule/schedule_line.png"
+                            alt=""
+                        />
+                        <div class="schedule-info">
+                            <h1 class="schedule-num">1</h1>
+                            <h1 class="schedule-name">빛의 숨결 (Breath of Light)</h1>
+                            <h1 class="schedule-time">11:00</h1>
+                        </div>
 
-                    <img
-                        class="schedule-line-img"
-                        src="./Images/schedule/schedule_line.png"
-                        alt=""
-                    />
-                    <div class="schedule-info">
-                        <h1 class="schedule-num">2</h1>
-                        <h1 class="schedule-name">도시의 결(Urban Texture)</h1>
-                        <h1 class="schedule-time">11:20</h1>
-                    </div>
-                    
-                    <img
-                        class="schedule-line-img"
-                        src="./Images/schedule/schedule_line.png"
-                        alt=""
-                    />
-                    <div class="schedule-info">
-                        <h1 class="schedule-num">3</h1>
-                        <h1 class="schedule-name">물 위의 기억 (Memory on Water)</h1>
-                        <h1 class="schedule-time">12:00</h1>
-                    </div>
-                    
-                    <img
-                        class="schedule-line-img"
-                        src="./Images/schedule/schedule_line.png"
-                        alt=""
-                    />
-                    <div class="schedule-info">
-                        <h1 class="schedule-num">4</h1>
-                        <h1 class="schedule-name">바람의 초상 (Portrait of Wind)</h1>
-                        <h1 class="schedule-time">13:00</h1>
-                    </div>
-                    
-                    <img
-                        class="schedule-line-img"
-                        src="./Images/schedule/schedule_line.png"
-                        alt=""
-                    />
-                    <div class="schedule-info">
-                        <h1 class="schedule-num">5</h1>
-                        <h1 class="schedule-name">섬의 시간 (Time of Nodeul)</h1>
-                        <h1 class="schedule-time">14:30</h1>
-                    </div>
-                    
-                    <img
-                        class="schedule-line-img"
-                        src="./Images/schedule/schedule_line.png"
-                        alt=""
-                    />
-                    <div class="schedule-info">
-                        <h1 class="schedule-num">6</h1>
-                        <h1 class="schedule-name">빛으로 그린 도시 (City in Light)</h1>
-                        <h1 class="schedule-time">16:00</h1>
-                    </div>
-                    
-                    <img
-                        class="schedule-line-img"
-                        src="./Images/schedule/schedule_line.png"
-                        alt=""
-                    />
-                    <div class="schedule-info">
-                        <h1 class="schedule-num">7</h1>
-                        <h1 class="schedule-name">노들의 꿈 (Dream of Nodeul)</h1>
-                        <h1 class="schedule-time">18:00</h1>
-                    </div>
-                    
-                    <img
-                        class="schedule-line-img"
-                        src="./Images/schedule/schedule_line.png"
-                        alt=""
-                    />
-                    <div class="schedule-info">
-                        <h1 class="schedule-num">8</h1>
-                        <h1 class="schedule-name">공명 (Resonance)</h1>
-                        <h1 class="schedule-time">19:30</h1>
-                    </div>
-                    -->
+                        <img
+                            class="schedule-line-img"
+                            src="./Images/schedule/schedule_line.png"
+                            alt=""
+                        />
+                        <div class="schedule-info">
+                            <h1 class="schedule-num">2</h1>
+                            <h1 class="schedule-name">도시의 결(Urban Texture)</h1>
+                            <h1 class="schedule-time">11:20</h1>
+                        </div>
+                        
+                        <img
+                            class="schedule-line-img"
+                            src="./Images/schedule/schedule_line.png"
+                            alt=""
+                        />
+                        <div class="schedule-info">
+                            <h1 class="schedule-num">3</h1>
+                            <h1 class="schedule-name">물 위의 기억 (Memory on Water)</h1>
+                            <h1 class="schedule-time">12:00</h1>
+                        </div>
+                        
+                        <img
+                            class="schedule-line-img"
+                            src="./Images/schedule/schedule_line.png"
+                            alt=""
+                        />
+                        <div class="schedule-info">
+                            <h1 class="schedule-num">4</h1>
+                            <h1 class="schedule-name">바람의 초상 (Portrait of Wind)</h1>
+                            <h1 class="schedule-time">13:00</h1>
+                        </div>
+                        
+                        <img
+                            class="schedule-line-img"
+                            src="./Images/schedule/schedule_line.png"
+                            alt=""
+                        />
+                        <div class="schedule-info">
+                            <h1 class="schedule-num">5</h1>
+                            <h1 class="schedule-name">섬의 시간 (Time of Nodeul)</h1>
+                            <h1 class="schedule-time">14:30</h1>
+                        </div>
+                        
+                        <img
+                            class="schedule-line-img"
+                            src="./Images/schedule/schedule_line.png"
+                            alt=""
+                        />
+                        <div class="schedule-info">
+                            <h1 class="schedule-num">6</h1>
+                            <h1 class="schedule-name">빛으로 그린 도시 (City in Light)</h1>
+                            <h1 class="schedule-time">16:00</h1>
+                        </div>
+                        
+                        <img
+                            class="schedule-line-img"
+                            src="./Images/schedule/schedule_line.png"
+                            alt=""
+                        />
+                        <div class="schedule-info">
+                            <h1 class="schedule-num">7</h1>
+                            <h1 class="schedule-name">노들의 꿈 (Dream of Nodeul)</h1>
+                            <h1 class="schedule-time">18:00</h1>
+                        </div>
+                        
+                        <img
+                            class="schedule-line-img"
+                            src="./Images/schedule/schedule_line.png"
+                            alt=""
+                        />
+                        <div class="schedule-info">
+                            <h1 class="schedule-num">8</h1>
+                            <h1 class="schedule-name">공명 (Resonance)</h1>
+                            <h1 class="schedule-time">19:30</h1>
+                        </div>
+                    </div> -->
                     <!-- 시간표 종료 -->
 
                 </div>
 
                 <div class="schedule-logo">
-                    <img
+                    <!-- <img
                         class="schedule-logo-img"
-                        src="./Images/schedule/atelier_nodeul_logo.png"
+                        src="./Images/common/atelier_nodeul_logo.png"
                         alt=""
-                    />
+                    /> -->
                 </div>
                 <!-- 페이지 공통 하단 -->
                 <div class="page-bottom">
                     <a class="page-top-btn" href="#top" id="goTopBtn"
-                        style="--bg: url('../Images/schedule/button_top.png'); --accent: #ffffff;"
+                        style="--bg: url('../Images/common/button_top2.png'); --accent: #ffffff;"
                         aria-label="">
                         <!--
                         <span class="page-top-btn-text">
@@ -251,7 +243,7 @@
                         -->
                     </a>
                     <a class="page-index-btn" href="./index.html"
-                        style="--bg: url('../Images/schedule/list_text.png'); --accent: #ffffff;"
+                        style="--bg: url('../Images/common/list_text2.png'); --accent: #ffffff;"
                         aria-label="">
                         <!--
                         <span class="page-index-btn-text">
@@ -263,8 +255,8 @@
                 <!-- 페이지 공통 하단 고정 -->
                 <div class="page-fixed-bottom">
                     <div class="page-fixed-bottom-inner">
-                        <a class="page-before-btn" href="./page_intro.html"
-                            style="--bg: url('../Images/schedule/button_prev.png'); --accent: #ffffff;"
+                        <a class="page-before-btn" href="./page_exhibit_intro_1.html"
+                            style="--bg: url('../Images/common/button_prev2.png'); --accent: #ffffff;"
                             aria-label="">
                             <!--
                             <span class="page-before-btn-text">
@@ -273,8 +265,8 @@
                             -->
                         </a>
                         
-                        <a class="page-after-btn" href="./page_exhibit_intro_1.html"
-                            style="--bg: url('../Images/schedule/button_next.png'); --accent: #ffffff;"
+                        <a class="page-after-btn" href="./page_exhibit_intro_2.html" 
+                            style="--bg: url('../Images/common/button_next2.png'); --accent: #ffffff;"
                             aria-label="">
                             <!--
                             <span class="page-after-btn-text">

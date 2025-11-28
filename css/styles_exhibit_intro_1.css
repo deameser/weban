@@ -17,8 +17,8 @@ body {
 
 .exhibit-title{ 
     position: relative; 
-    height: 50px; 
-    margin-top: 50px;
+    height: 80px; 
+    margin-top: 20px;
 }
 .exhibit-title-text-image{
     display: flex;
@@ -27,9 +27,10 @@ body {
     margin: 0px auto;
 }
 .exhibit-title-text{
-    position: relative; z-index: 1;
+    position: relative; 
+    z-index: 1;
     height: 100%;
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     display: grid; place-items: center;
     text-align: center; color: #ffffff; padding: 0px;
 }
@@ -38,11 +39,12 @@ body {
     margin-top: 0px;
 }
 .exhibit-title-logo-img{
-    width: 104px;
-    height: 104px;
+    width: 344px;
+    height: 146px;
     display: flex;
     object-fit: cover;
     justify-content: center; /* 수평 가운데 */
+    background-size: contain;
 
     margin: 0 auto;
 }
@@ -99,8 +101,38 @@ body {
 
 /* 전시 소개 */
 .exhibit-introduce{ 
+    /* position: relative; 
+    margin-left: 30px; */
     position: relative; 
-    margin-left: 30px;
+    width: 344px;
+    height: 315px; 
+    margin: 54px auto;
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
+    /* align-items: flex-start; */
+    background-image: url('../Images/exhibit_intro_1/exhibit_intro_explain_text_1_bg.png');
+    background-repeat: no-repeat;   /* 반복 안 함 */
+    background-position: center;    /* 가운데 정렬 */
+    background-size: contain;
+    z-index: 0;
+}
+.exhibit-introduce-name-text{
+    position: static;
+    display: block;
+    text-align: left;
+    color: #ffffff;      
+    z-index: 2;
+
+    max-width: min(100%, var(--container-max, 660px));
+    /* margin: 0 auto; */
+}
+.exhibit-introduce-name-text h1 {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 600;   /* 100~300 중에 하나 */
+  font-size: 0.94rem;
+  margin-top: 30px;
+  margin-left: 30px;
 }
 .exhibit-introduce-text{
     position: static;
@@ -115,20 +147,49 @@ body {
 .exhibit-introduce-text h1 {
   font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   font-weight: 400;   /* 100~300 중에 하나 */
-  font-size: 0.8rem;
-  margin: 20px 5px;
+  font-size: 0.72rem;
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
 /* 전시 설명 */
 .exhibit-explain{ 
     position: relative; 
-    margin-left: 30px;
+    width: 344px;
+    height: 568px; 
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
+    /* align-items: flex-start; */
+    background-image: url('../Images/exhibit_intro_1/exhibit_intro_explain_text_2_bg.png');
+    background-repeat: no-repeat;   /* 반복 안 함 */
+    background-position: center;    /* 가운데 정렬 */
+    background-size: contain;
+    z-index: 0;
 }
 .exhibit-explain-img{
     display: block;
     width: min(100%, var(--container-max, 660px));
     height: 500px;
     margin: 0 auto;
+}
+.exhibit-explain-name-text{
+    position: static;
+    display: block;
+    text-align: left;
+    color: #ffffff;      
+    z-index: 2;
+
+    max-width: min(100%, var(--container-max, 660px));
+    /* margin: 0 auto; */
+}
+.exhibit-explain-name-text h1 {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 800;   /* 100~300 중에 하나 */
+  font-size: 0.80rem;
+  margin-top: 30px;
+  margin-left: 29px;
 }
 .exhibit-explain-text{
     position: static;
@@ -138,13 +199,15 @@ body {
     z-index: 2;
 
     max-width: min(100%, var(--container-max, 660px));
-    margin: 0 auto;
+    margin: 0;
 }
 .exhibit-explain-text h1 {
   font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  font-weight: 400;   /* 100~300 중에 하나 */
-  font-size: 0.8rem;
-  margin: 20px 5px;
+  font-weight: 400;
+  font-size: 0.66rem;
+  margin-top: -5px;
+  margin-left: 28px;
+  line-height: 1.4;
 }
 
 .page-bottom{ 

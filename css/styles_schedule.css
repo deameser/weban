@@ -33,7 +33,7 @@ body {
   /* color: #7a7a7a; */
   font-size: 1.1rem;
   
-  background-image: url('../Images/schedule/lang_arrow_icon.png');
+  background-image: url('../Images/common/lang_arrow_icon.png');
   background-repeat: no-repeat;
   background-position: right 10px center;  /* 오른쪽 안쪽에 배치 */
   background-size: 9px auto;
@@ -53,20 +53,11 @@ body {
     flex-direction: column;
     /*align-items: center;*/
     /* align-items: flex-start; */
+    background-size: contain;
     background-image: url('../Images/schedule/schedule_info_bg.png');
     background-repeat: no-repeat;   /* 반복 안 함 */
     background-position: center;    /* 가운데 정렬 */
     z-index: 0;
-}
-.schedule-explain-name
-{
-  width: 100%;
-  max-width: 660px; 
-  margin: 0 auto;
-  color: #fff;
-  font-size: 0.9rem;
-  font-weight: 400;
-  margin-bottom: 20px;
 }
 .schedule-explain{
   width: 100%;
@@ -102,23 +93,31 @@ body {
 }
 .schedule-explain h1{
   color: #fff;
-  font-size: 0.9rem;
+  font-size: 0.65rem;
   font-weight: 400;
   height: 10px;
 }
-.schedule-explain-name{
+.schedule-explain-name
+{
+  width: 100%;
+  max-width: 660px; 
+  color: #fff;
+  font-size: 0.1rem;
+  font-weight: 200;
+  margin-top: 0px;
+  margin-bottom: 20px;
   margin-left: 20px;
 }
 .schedule-explain-sub {
-  display: grid;
+  display: block;
   /* grid-template-columns: 75px 20px 300px;  */
-  grid-template-columns: minmax(60px, 28%) 20px minmax(0, 1fr);
-  align-items: center;
+  /* grid-template-columns: 60px 1px minmax(0, 1fr); */
+  /* align-items: center; */
   width: 100%;                       /* 고정하고 싶으면 */
   max-width: 660px; 
   margin-left: 0px;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .schedule-explain-sub .row {
@@ -126,62 +125,82 @@ body {
 }
 
 .schedule-explain-sub-left {
-  text-align: right;  
-  margin-left: 5px;
+  text-align: left;  
+  margin-left: 20px;
 }
 
 .schedule-explain-sub-right {
   text-align: left;
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .schedule-explain-sub-icon {
   width: 5px;
-  height: 15px;
+  height: 12px;
   object-fit: contain;
-  margin-left: 5px;
-  margin-right: 5px;
-  margin-top: 15px;
+  margin-left: 3px;
+  margin-right: 1px;
+  margin-top: 6px;
 }
-
+.schedule-info-all{
+  margin-top: -20px;
+}
 .schedule-info{
-  width: min(80%, 480px);
+  /* width: min(80%, 480px); */
+  width: 100%;
   min-width: 300px;
   max-width: 480px;
   display: grid;
-  margin: 0 auto;
-  grid-template-columns: var(--left, 100px) 1fr var(--right, 100px);
+  margin: -4px auto;
+  grid-template-columns: var(--left, 80px) 1fr var(--right, 120px);
   align-items: center;
-  column-gap: 8px;  
+  column-gap: 2px;  
 }
 .schedule-info h1{
   color: #fff;
-  font-size: 0.9rem;
+  font-size: 0.65rem;
   font-weight: 400;
 }
 .schedule-num {
   text-align: center;
-  width: 30px;
+  width: 20px;
   margin-left: 40px;
 }
 
-.schedule-name {
+.schedule-name-title {
   text-align: center;
-  max-width: 300px;
+  width: 160px;
+  max-width: 500px;
   word-break: break-all;
+  margin-left: -15px;
+}
+.schedule-name {
+  text-align: left;
+  width: 160px;
+  max-width: 500px;
+  word-break: break-all;
+  margin-right: 0px;
 }
 
+.schedule-time-title {
+  text-align: center;
+  width: 80px;
+  margin-left: 15px;
+  margin-right: 12px;
+}
 .schedule-time {
   text-align: center;
-  width: 100px;
+  width: 80px;
   margin-right: 12px;
 }
 .schedule-logo{
     margin: 20px auto;
+    height: 60px;
 }
 .schedule-line-img{
-    width: min(100%, 480px);
-    height: 3px;
+    /* width: min(100%, 480px); */
+    width:85%;
+    height: 1px;
     display: flex;
     object-fit: cover;
     justify-content: center; /* 수평 가운데 */

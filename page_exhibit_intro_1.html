@@ -7,12 +7,6 @@
 
     <!-- 기본 폰트 (선택사항: 안 써도 되지만 깔끔하게 보기 좋게 넣어둠) -->
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
-        rel="stylesheet"
-    />
-
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/styles_page.css" />
     <link rel="stylesheet" href="./css/styles_exhibit_intro_1.css" />
@@ -74,7 +68,6 @@
                         <select id="langSelect">
                             <option value="ko">KOR</option>
                             <option value="en">ENG</option>
-                            <option value="ja">JPN</option>
                         </select>
                         <img id="langSelectIcon" src="./Images/common/lang_text_kor.png" alt="selectIcon" width="31" height="13">
                     </div>
@@ -85,7 +78,7 @@
     
     <main>
         <div class="info-sound">
-            <audio id="info-sound-audio" src="./Sounds/bgm_1.ogg" preload="metadata" autoplay playsinline></audio>
+            <audio id="info-sound-audio" src="./Sounds/3 전시소개_미디어_모먼트_한강_한국어.mp3" preload="metadata" autoplay playsinline></audio>
             <div class="info-sound-audio-player">
                 <div class="gauge-row">
                     <span id="timeCurrent" class="time-label" aria-live="polite">00:00</span>
@@ -108,17 +101,17 @@
         <!-- ================= Exhibit ================= -->
         <section class="exhibit-container" id="exhibit-container">
             <div class="container">
-                <div class="exhibit-title">    
-                    <!--
+                <div class="exhibit-title">
+                    
                     <div class="exhibit-title-text">
-                        <h1 data-i18n="art_1_1_exhibit_title">전시 소개</h1>    
+                        <h1 data-i18n="exhibit_intro_title">전시 소개</h1>    
                     </div>
-                    -->
-                    <img
+                   
+                    <!-- <img
                         class="exhibit-title-text-image"
                         src="Images/exhibit_intro_1/title_text.png"
                         alt=""
-                    />
+                    /> -->
                 </div>
 
                 <div class="exhibit-title-logo">
@@ -129,60 +122,59 @@
                     />
                 </div>
                 
-                <div class="exhibit-intro-text-1-bg">
+                <!-- <div class="exhibit-intro-text-1-bg">
                     <img
                         class="exhibit-intro-text-1-image"
                         src="Images/exhibit_intro_1/exhibit_intro_explain_text_1.png"
                         alt=""
                     />
-                </div>
+                </div> -->
 
-                <div class="exhibit-intro-text-2-bg">
+                <!-- <div class="exhibit-intro-text-2-bg">
                     <img
                         class="exhibit-intro-text-2-image"
                         src="Images/exhibit_intro_1/exhibit_intro_explain_text_2.png"
                         alt=""
                     />
                 </div>
-                
+                 -->
                 <!-- 전시 소개 -->
-                 <!--
                 <div class="exhibit-introduce">       
+                    <div class="exhibit-introduce-name-text">
+                        <h1 data-i18n="exhibit_introduce_name">아뜰리에 노들</h1>
+                    </div>  
                     <div class="exhibit-introduce-text">
                         <h1 data-i18n="exhibit_introduce">전시 소개</h1>  
                     </div>
                 </div>
                 
-                <div class="screen-division-line">
-                    <img
-                        class="screen-division-line-img"
-                        src="./Images/common/screen_division_line.png"
-                        alt=""
-                    />
-                </div>
-                -->
 
                 <!-- 전시 설명 -->
-                 <!--
-                <div class="exhibit-explain">           
+                <div class="exhibit-explain">
+                    <div class="exhibit-explain-name-text">
+                        <h1 data-i18n="exhibit_explain_name_1">아뜰리에 노들</h1>
+                    </div>  
                     <div class="exhibit-explain-text">
-                        <h1 data-i18n="exhibit_explain">전시 설명</h1>  
+                        <h1 data-i18n="exhibit_explain_1">전시 설명</h1>  
+                    </div>
+                    <div class="exhibit-explain-name-text">
+                        <h1 data-i18n="exhibit_explain_name_2">아뜰리에 노들</h1>
+                    </div>  
+                    <div class="exhibit-explain-text">
+                        <h1 data-i18n="exhibit_explain_2">전시 설명</h1>  
+                    </div>
+                    <div class="exhibit-explain-name-text">
+                        <h1 data-i18n="exhibit_explain_name_3">아뜰리에 노들</h1>
+                    </div>  
+                    <div class="exhibit-explain-text">
+                        <h1 data-i18n="exhibit_explain_3">전시 설명</h1>  
                     </div>
                 </div>
-
-                <div class="screen-division-line">
-                    <img
-                        class="screen-division-line-img"
-                        src="./Images/common/screen_division_line.png"
-                        alt=""
-                    />
-                </div>
-                -->
 
                 <!-- 페이지 공통 하단 -->
                 <div class="page-bottom">
                     <a class="page-top-btn" href="#top" id="goTopBtn"
-                        style="--bg: url('../Images/exhibit_intro_1/button_top.png'); --accent: #ffffff;"
+                        style="--bg: url('../Images/common/button_top.png'); --accent: #ffffff;"
                         aria-label="">
                         <!--
                         <span class="page-top-btn-text">
@@ -191,7 +183,7 @@
                         -->
                     </a>
                     <a class="page-index-btn" href="./index.html"
-                        style="--bg: url('../Images/exhibit_intro_1/list_text.png'); --accent: #ffffff;"
+                        style="--bg: url('../Images/common/list_text.png'); --accent: #ffffff;"
                         aria-label="">
                         <!--
                         <span class="page-index-btn-text">
@@ -203,8 +195,8 @@
                 <!-- 페이지 공통 하단 고정 -->
                 <div class="page-fixed-bottom">
                     <div class="page-fixed-bottom-inner">
-                        <a class="page-before-btn" href="./page_schedule.html"
-                            style="--bg: url('../Images/exhibit_intro_1/button_prev.png'); --accent: #ffffff;"
+                        <a class="page-before-btn" href="./index.html"
+                            style="--bg: url('../Images/common/button_prev.png'); --accent: #ffffff;"
                             aria-label="">
                             <!--
                             <span class="page-before-btn-text">
@@ -213,8 +205,8 @@
                             -->
                         </a>
                         
-                        <a class="page-after-btn" href="./page_exhibit_intro_2.html"
-                            style="--bg: url('../Images/exhibit_intro_1/button_next.png'); --accent: #ffffff;"
+                        <a class="page-after-btn" href="./page_schedule.html"
+                            style="--bg: url('../Images/common/button_next.png'); --accent: #ffffff;"
                             aria-label="">
                             <!--
                             <span class="page-after-btn-text">

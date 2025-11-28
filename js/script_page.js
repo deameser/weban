@@ -2,6 +2,8 @@
 /* Audio */
 const audio = document.getElementById('info-sound-audio');
 const playBtn = document.getElementById('playBtn');
+const backBtn = document.getElementById('backBtn');
+const forwardBtn = document.getElementById('forwardBtn');
 const playIcon = document.getElementById('playIcon');
 const seekBar = document.getElementById('seekBar');
 const time = document.getElementById('time');
@@ -33,7 +35,7 @@ audio.addEventListener('timeupdate', () => {
   seekBar.value = audio.currentTime;
   /*time.textContent = formatTime(audio.currentTime);*/
   tCur.textContent = fmtTime(audio.currentTime || 0);
-  seek.value = audio.currentTime || 0;
+  seekBar.value = audio.currentTime || 0;
   syncFillPx();
 });
 
@@ -75,6 +77,32 @@ playBtn.addEventListener('click', () => {
   }
 });
 
+backBtn.addEventListener('click', () => {
+    let targetTime = audio.currentTime - 10;
+    if (targetTime < 0) {
+      targetTime = 0;
+    }
+
+    if (!isNaN(audio.duration) && targetTime > audio.duration) {
+      targetTime = audio.duration;
+    }
+
+    audio.currentTime = targetTime;
+});
+
+forwardBtn.addEventListener('click', () => {
+    let targetTime = audio.currentTime + 10;
+    if (targetTime < 0) {
+      targetTime = 0;
+    }
+
+    if (!isNaN(audio.duration) && targetTime > audio.duration) {
+      targetTime = audio.duration;
+    }
+
+    audio.currentTime = targetTime;
+});
+
 seekBar.addEventListener('input', () => {
   audio.currentTime = seekBar.value;
   
@@ -84,7 +112,7 @@ seekBar.addEventListener('input', () => {
   const p = (seekBar.value / seekBar.max) || 0;
   gaugeWrap.style.setProperty('--p', p);
   
-  const preview = parseFloat(seek.value) || 0;
+  const preview = parseFloat(seekBar.value) || 0;
   tCur.textContent = fmtTime(preview);
   syncFillPx();
 

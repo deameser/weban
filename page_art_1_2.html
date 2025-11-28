@@ -5,15 +5,10 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title>Landing Page</title>
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap"
-        rel="stylesheet"
-    />
-
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/styles_page.css" />
     <link rel="stylesheet" href="./css/styles_art_1_2.css" />
+    <link rel="stylesheet" href="./css/styles_art.css" />
 
     <style>
         .audio-player{
@@ -72,7 +67,6 @@
                         <select id="langSelect">
                             <option value="ko">KOR</option>
                             <option value="en">ENG</option>
-                            <option value="ja">JPN</option>
                         </select>
                         <img id="langSelectIcon" src="./Images/common/lang_text_kor.png" alt="selectIcon" width="31" height="13">
                     </div>
@@ -83,7 +77,7 @@
     
     <main>
         <div class="info-sound">
-            <audio id="info-sound-audio" src="./Sounds/bgm_1.ogg" preload="metadata" autoplay playsinline></audio>
+            <audio id="info-sound-audio" src="./Sounds/4-1-2 코드로 짜인 풍경 서울.mp3" preload="metadata" autoplay playsinline></audio>
             <div class="info-sound-audio-player">
                 <div class="gauge-row">
                     <span id="timeCurrent" class="time-label" aria-live="polite">00:00</span>
@@ -106,17 +100,13 @@
         <!-- ================= Art ================= -->
         <section class="art-container" id="art-container">
             <div class="container">
-                <div class="art-title">     
-                    <!--
-                    <div class="art-title-text">
-                        <h1 data-i18n="exhibit_name_1">예술: 미디어스케이프 (Mediascape)</h1>
-                    </div>
-                    -->
-                    <img
+                <div class="art-title">
+                    <!-- <img
                         class="art-title-text-image"
                         src="Images/art_1_2/art_1_2_title_text.png"
                         alt=""
-                    />
+                    /> -->
+                    <h1 data-i18n="exhibit_name_1">예술</h1>
                 </div>
 
                 <div class="art-image">
@@ -128,13 +118,17 @@
                 </div>
                 <div class="art-link">
                     <a class="art-link-btn" href="https://www.naver.com/"
-                        style="--bg: url('../Images/art_1_2/art_1_2_link_button.png'); --accent: #ffffff;"
+                        style="--bg: url('../Images/common/art_link_button.png'); --accent: #ffffff;"
                         aria-label="">
                         <!--
                         <span class="art-link-btn-text">
                             <h1 data-i18n="link_button_text">영상 보러가기</h1>
                         </span>
                         -->
+                        
+                        <div class="art-link-btn-text">
+                            <h1 data-i18n="link_button_text">영상 보러가기</h1>
+                        </div>
                     </a>
                 </div>
                 
@@ -145,20 +139,29 @@
                         <h1 class="art_title" data-i18n="art_name_1">제목</h1>                       
                     </div>
                 </div> -->
-                <div class="art-name">
-                    <img
-                        class="art-name-text-image"
-                        src="Images/art_1_2/art_1_2_name_text.png"
-                        alt=""
-                    />
+                <div class="art-info">   
+                    <div class="artist-name">
+                        <h1 data-i18n="artist_name_2">작가</h1>
+                    </div>
+                    <div class="art-name">
+                        <!-- <img
+                            class="art-name-text-image"
+                            src="Images/art_1_2/art_1_2_name_text.png"
+                            alt=""
+                        /> -->
+                        <h1 data-i18n="exhibit_list_2">작품명</h1>
+                    </div>
                 </div>
                 <!-- 작품 설명 -->
                 <div class="art-explain-text-bg">
-                    <img
+                    <!-- <img
                         class="art-explain-text-image"
                         src="Images/art_1_2/art_1_2_explain_text.png"
                         alt=""
-                    />
+                    /> -->
+                    <div class="art-explain">
+                        <h1 data-i18n="art_explain_2">작품설명</h1>
+                    </div>
                 </div>
                 <!--
                 <div class="art-explain">           
@@ -168,10 +171,14 @@
                 </div>
                 -->
 
+                <!-- 타임 라인 -->
+                <div class="art-explain-time-table-bg">
+                </div>
+                
                 <!-- 페이지 공통 하단 -->
                 <div class="page-bottom">
                     <a class="page-top-btn" href="#top" id="goTopBtn"
-                        style="--bg: url('../Images/art_1_2/button_top.png'); --accent: #ffffff;"
+                        style="--bg: url('../Images/common/button_top2.png'); --accent: #ffffff;"
                         aria-label="">
                         <!--
                         <span class="page-top-btn-text">
@@ -179,8 +186,8 @@
                         </span>
                         -->
                     </a>
-                    <a class="page-index-btn" href="./index.html"
-                        style="--bg: url('../Images/art_1_2/list_text.png'); --accent: #ffffff;"
+                    <a class="page-index-btn" href="./page_exhibit_intro_2.html"
+                        style="--bg: url('../Images/common/list_text2.png'); --accent: #ffffff;"
                         aria-label="">
                         <!--
                         <span class="page-index-btn-text">
@@ -193,7 +200,7 @@
                 <div class="page-fixed-bottom">
                     <div class="page-fixed-bottom-inner">
                         <a class="page-before-btn" href="./page_art_1_1.html"
-                            style="--bg: url('../Images/art_1_2/button_prev.png'); --accent: #ffffff;"
+                            style="--bg: url('../Images/common/button_prev2.png'); --accent: #ffffff;"
                             aria-label="">
                             <!--
                             <span class="page-before-btn-text">
@@ -203,7 +210,7 @@
                         </a>
                         
                         <a class="page-after-btn" href="./page_art_1_3.html"
-                            style="--bg: url('../Images/art_1_2/button_next.png'); --accent: #ffffff;"
+                            style="--bg: url('../Images/common/button_next2.png'); --accent: #ffffff;"
                             aria-label="">
                             <!--
                             <span class="page-after-btn-text">

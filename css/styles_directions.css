@@ -56,6 +56,21 @@ body {
     position: relative; 
     margin: 30px auto;
 }
+.directions-explain-title-text{
+    position: static;
+    display: block;
+    text-align: left;
+    color: #fff;          
+    z-index: 2;     
+    
+    max-width: min(100%, var(--container-max, 660px));
+    margin-top: 15px;
+    margin-left: 50px;
+}
+.directions-explain-title-text h1{
+    font-size: 0.67rem;
+    font-weight: 600;
+}
 .directions-explain-text{
     position: static;
     display: block;
@@ -64,14 +79,53 @@ body {
     z-index: 2;     
     
     max-width: min(100%, var(--container-max, 660px));
-    margin: 0 auto;      
+    margin-top: -7px;
+    margin-left: 50px;
 }
 .directions-explain-text h1{
-    font-size: 1.0rem;
-    font-weight: 300;
+    font-size: 0.67rem;
+    font-weight: 400;
 }
 
+.map-image-sub{
+    padding: 0px;
+    margin: 15px auto;
+}
+.map-image-img-sub{
+    width: 345px;
+    height: 222px;
+    height: auto;
+    display: flex;
+    object-fit: cover;
+    margin: 0px auto;
+    justify-content: center; /* 수평 가운데 */
+}
 .page-bottom{ 
     margin-top: 180px;
     margin-bottom: 15px;
+}
+.page-home-btn{
+    position: relative;
+    display: block;
+    align-items: center;
+    /*gap: 14px;*/
+    width: 33px;
+    height: 52px;
+    /*padding: 16px 18px;*/
+    text-decoration: none;
+    color: transparent;
+
+    /* 배경 이미지/색 */
+    background-image: var(--bg);
+    background-size: contain;
+    background-position: center;
+    background-color: transparent; /* 로딩 전/실패 대비 */
+    background-repeat: no-repeat;
+    background-size: 33px 52px;
+
+    overflow: hidden;
+    isolation: isolate;
+    box-shadow: 0 1px 2px rgba(0,0,0,.06);
+    transition: transform .15s ease, box-shadow .15s ease;
+    margin: 0px auto;
 }

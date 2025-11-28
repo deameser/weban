@@ -132,7 +132,7 @@ header.nav{
   gap: 8px;
   /*width: min(100%, calc(235px + 24px*2 + 16px));*/  /* 게이지 235px + 라벨 + 간격 */
   width: calc(235px + 24px*2 + 16px);  /* 게이지 235px + 라벨 + 간격 */
-  margin: 1px auto;
+  margin: 18px auto;
 }
 
 .time-label{
@@ -145,7 +145,7 @@ header.nav{
 .gauge-wrap {
   position: relative;
   --gauge-h: 5px;  /* 트랙높이 */
-  --thumb:   7px;  /* thumb 너비(px) */
+  --thumb:   9px;  /* thumb 너비(px) */
   /*--fill-px: 0px;*/
   --p: 0;
 
@@ -153,13 +153,16 @@ header.nav{
   /* width: min(100%, 235px); */
   width: 235px;
   height: var(--gauge-h);
-  margin: 20px auto;
+  /* margin: 20px auto; */
   background: url("../Images/common/sound_gauge_bg.png") center/100% 100% no-repeat; /* 전체 바 */
-  --fill: 0%; /* JS에서 이 값만 바꿔줄 거임 */
+  --fill: 0%; /* JS에서  */
 }
 .gauge-wrap::before {
   content: "";
   position: absolute;
+  left: calc(var(--thumb) / 2);  /* 트랙 시작점과 맞춤 */
+  top: 0;
+  bottom: 0;
   inset: 0;
   width: calc(var(--p) * (100% - var(--thumb)) + (var(--thumb) / 2));
   /*width: var(--fill-px);  */
@@ -188,19 +191,21 @@ header.nav{
 .gauge-wrap input::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 7px;
-  height: 7px;
+  width: 9px;
+  height: 9px;
   background: url("../Images/common/sound_thumb.png") center/contain no-repeat;
   border: none;
+  margin-left: -3px;
 }
 .gauge-wrap input::-moz-range-track {
   background: transparent;
 }
 .gauge-wrap input::-moz-range-thumb {
-  width: 14px;
-  height: 14px;
+  width: 9px;
+  height: 9px;
   background: url("../Images/common/sound_thumb.png") center/contain no-repeat;
   border: none;
+  margin-left: -3px;
 }
 .gauge-wrap #seekBar {
   position: absolute;
@@ -228,21 +233,23 @@ header.nav{
 #seekBar::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 7px;
-  height: 7px;
+  width: 9px;
+  height: 9px;
   background: url("../Images/common/sound_thumb.png") center/contain no-repeat;
   border: none;
   cursor: pointer;
-  margin-top: -3.5px; /* 트랙 중앙에 오게 살짝 올림 (트랙 높이에 맞춰서 조절) */
+  margin-top: -4.5px; /* 트랙 중앙에 오게 살짝 올림 (트랙 높이에 맞춰서 조절) */
+  margin-left: -3px;
 }
 #seekBar::-moz-range-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 7px;
-  height: 7px;
+  width: 9px;
+  height: 9px;
   background: url("../Images/common/sound_thumb.png") center/contain no-repeat;
   border: none;
   cursor: pointer;
+  margin-left: -3px;
 }
 .info-sound-audio-player button {
   position: absolute;
@@ -420,7 +427,7 @@ header.nav{
   margin-left: 0px;
 }
 .page-after-btn{
-  margin-right: 25px;
+  margin-right: 0px;
 }
 .page-before-btn h1{
     font-weight: 700;

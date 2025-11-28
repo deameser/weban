@@ -19,7 +19,14 @@ body {
 .exhibit-list-title{
     position: relative;
     text-align: center;
+    color: #ffffff;
+    padding: 0px;
     margin: 0px auto;
+}
+.exhibit-list-title h1
+{
+  font-weight: 400;
+  font-size: 0.94rem;
 }
 .exhibit-list-grid{
   display: grid;
@@ -40,7 +47,7 @@ body {
 
     /* 배경 이미지/색 */
     background-image: url('../Images/exhibit_intro_2/exhibit_intro_2_list_bg.png');
-    background-size: auto, auto;
+    background-size: contain;
     background-position: center, center;
     background-color: transparent, transparent;
     background-repeat: no-repeat, no-repeat;
@@ -59,6 +66,21 @@ body {
 .exhibit-btn-text {
     margin-left: 20px;
 }
+
+.exhibit-list-text{
+    position: relative;
+    text-align: left;
+    color: #ffffff;
+    padding: 0px;
+    margin: 0;
+}
+.exhibit-list-text h1
+{
+    font-weight: 600;
+    font-size: 1.1em;
+    margin-left: 20px;
+}
+
 .page-bottom{ 
     margin-top: 40px;
     margin-bottom: 15px;
