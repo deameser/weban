@@ -81,12 +81,14 @@ const translations = {
         "art_explain_8" : "해치와 친구들이 서우르이 명소를 소개한다.\n지하철과 한강버스를 타고 출퇴근하며, 광화문과 한강을\n오가며, 노들섬에 도착하여 미디어파사드 작품을\n관람한다.",
         "art_explain_9" : "바람과 물결, 생명의 빛이 살아 숨쉬는 노들섬은 나무와 새,\n물고기가 노니는 아름다운 자연이 된다.",
 
+        "directions_title" : "오시는 길",
+
         "directions_explain_title_1" : "지하철",
         "directions_explain_title_2" : "버스",
         "directions_explain_title_3" : "자선 버스",
 
         "directions_explain_1" : "1호선\n용산역 5번출구 하차 - 도보 약 300m 위치의 신용산역\n정류장(03-004)\n노들섬 방면 버스 탑승 - 노들섬 정류장(03-340) 하차\n\n4호선\n신용산역 3번출구 - 도보 100m 위치 신용산역 정류장(03-004)\n용산-노들섬 방면 버스 탑승 - 노들섬 정류장(03-340) 하차\n\n9호선\n노들역 2번 출구 - 한강대교 방면으로 약 700m 이동\n\n\n",
-        "directions_explain_2" : "버스\n간선 버스\n150, 151, 152, 500, 504, 506,\n507, 605, 750A, 750B, 751, 752",
+        "directions_explain_2" : "간선 버스\n150, 151, 152, 500, 504, 506,\n507, 605, 750A, 750B, 751, 752",
         "directions_explain_3" : "지선버스\n6211\n\n한강버스\n여의도 - 압구정 사이 구간에서 관람 가능",
     },
     en : {
@@ -161,23 +163,25 @@ const translations = {
         "artist_name_8" : "",
         "artist_name_9" : "",
 
-        "art_explain_1" : "노들섬의 풍경과 생태에서 얻은 모티브를 기하학적\n패턴으로 재구성한 미디어파사드 작품이다.\n자연과 도시의 감각이 어우러진 새로운 기하학적 미디어\n풍경을 구현한다.",
-        "art_explain_2" : "코드로 짜인 풍경: 서울\n서울의 도시 풍경을 데이터와 코드의 언어로 직조하듯\n시각화한 디지털 알고리즘 작품이다.\n보행자와 차량의 움직임과 역동적인 건축 구조 등을\n리듬으로 재구성해 서울의 질서와 에너지를 추상적\n디지털 풍경으로 표현한다.",
-        "art_explain_3" : "<심연>은 빛과 어둠, 질서와 혼란 같은 상반된 갠며을\n수학적 알고리즘으로 연결한 작품이다.\n흑백의 대비와 색의 변주가 교차하며 하나의 흐름을\n 이루고, 다름과 차이가 사유에서 비롯됨을 깨닫게 한다.",
-        "art_explain_4" : "<묵상 2025>는 빛의 파동과 이미지의 적층, 반복되는 패턴을 통해 '도시 명상'의 가능성을 탐구하는 작품이다.\n소리와 파장의 흐름 속에서 관람자는 명상하듯 멈추고\n 바라보며, 대자연 속 인간의 존재를 사유하게 된다.",
-        "art_explain_5" : "<로즐린>은 기억의 잔향과 자연의 색채를 담아, 감정을\n투영할 수 있는 존재를 은유적으로 표현한 디지털 시각\n추상 작품이다.\n꽃이 피듯 몽글몽글한 감정의 이미지는 파티클과 노이즈\n알고리즘을 따라 섬에서 강, 그리고 폭포로 이어지며\n대자연의 풍경으로 확장된다.",
-        "art_explain_6" : "<후라칸>은 '바람', '폭풍'을 뜻하는 이름처럼, 수십만 개\n파티클이 만든 소용돌이를 알고리즘으로 구현한 작품이다.\n태풍의 눈을 중심으로 소리와 바람이 얽히며 자연의 힘을\n빚어내는 응충과 균형을 보여준다.",
-        "art_explain_7" : "하루를 마무리하는 시민들에게 위로와 응원의 메시지를\n전달한다.\n\"걸음을 멈춰도 괜찮다고 바람이 먼저 말해주는 곳. 오늘\n당신에게도 그런 쉼이 필요합니다. 서울시가 응원합니다.\"",
-        "art_explain_8" : "해치와 친구들이 서우르이 명소를 소개한다.\n지하철과 한강버스를 타고 출퇴근하며, 광화문과 한강을\n오가며, 노들섬에 도착하여 미디어파사드 작품을\n관람한다.",
-        "art_explain_9" : "바람과 물결, 생명의 빛이 살아 숨쉬는 노들섬은 나무와 새,\n물고기가 노니는 아름다운 자연이 된다.",
+        "art_explain_1" : "A media facade work that reconstructs motifs drawn\nfrom Nodeul Island’s scenery and ecology into\ngeometric patterns.\nIt presents a new geometric media landscape where\nthe senses of nature and the city harmonize.",
+        "art_explain_2" : "Code-Woven Landscape: Seoul\nThis digital algorithmic artwork visualizes Seoul’s\nurban scenery as if weaving it with the language of\ndata and code.\nBy reconstructing the movements of pedestrians and\nvehicles, as well as the dynamism of architectural\nstructures, into rhythmic patterns, it expresses the order\nand energy of Seoul as an abstract digital landscape.",
+        "art_explain_3" : "<Abyss> connects contrasting concepts—such as light\nand darkness, order and chaos—through mathematical\nalgorithms.\nThe interplay of black-and-white contrasts and shifting\ncolor variations forms a single flow, reminding viewers\nthat differences and diversity originate from thought.",
+        "art_explain_4" : "<Meditation 2025> explores the possibility of \“urban\nmeditation\” through light waves, layered imagery, and\nrepeated patterns.\nWithin the flow of sound and vibration, viewers pause\nand observe as if meditating, contemplating human\nexistence within the vastness of nature.",
+        "art_explain_5" : "<Roslyn> metaphorically expresses an emotional,\nreflective presence through an abstract digital visual\nwork that contains the afterimage of memory and\nthe colors of nature.\nImages of soft emotions bloom like flowers, following\nparticle and noise algorithms from the island to the\nriver, and eventually to a waterfall—expanding into\na grand natural landscape.",
+        "art_explain_6" : "<Huracan>—a name meaning \“wind\” and \“storm\”\n—implements vortexes created by hundreds of\nthousands of particles through algorithms.\nCentered around the eye of the storm, sound and\nwind intertwine, revealing the condensation and balance\nformed by the forces of nature.",
+        "art_explain_7" : "It delivers a message of comfort and encouragement\nto citizens ending their day:\n\“On days when the wind tells you it’s okay to pause\nfirst, may you also find such rest today. The Seoul\nMetropolitan Government is cheering for you.\”",
+        "art_explain_8" : "Haechi and friends introduce famous landmarks of Seoul.\nThey commute by subway and by Han River bus,\ntravel between Gwanghwamun and the Han River, and\narrive at Nodeul Island to view the media facade\nartworks.",
+        "art_explain_9" : "Nodeul Island becomes a beautiful natural space where\nwind, waves, and the light of life breathe—filled with\ntrees, birds, and fish.",
 
-        "directions_explain_title_1" : "지하철",
-        "directions_explain_title_2" : "버스",
-        "directions_explain_title_3" : "자선 버스",
+        "directions_title" : "Directions",
 
-        "directions_explain_1" : "1호선\n용산역 5번출구 하차 - 도보 약 300m 위치의 신용산역\n정류장(03-004)\n노들섬 방면 버스 탑승 - 노들섬 정류장(03-340) 하차\n\n4호선\n신용산역 3번출구 - 도보 100m 위치 신용산역 정류장(03-004)\n용산-노들섬 방면 버스 탑승 - 노들섬 정류장(03-340) 하차\n\n9호선\n노들역 2번 출구 - 한강대교 방면으로 약 700m 이동\n\n\n",
-        "directions_explain_2" : "버스\n간선 버스\n150, 151, 152, 500, 504, 506,\n507, 605, 750A, 750B, 751, 752",
-        "directions_explain_3" : "지선버스\n6211\n\n한강버스\n여의도 - 압구정 사이 구간에서 관람 가능",
+        "directions_explain_title_1" : "Subway",
+        "directions_explain_title_2" : "Bus",
+        "directions_explain_title_3" : "Green Bus",
+
+        "directions_explain_1" : "Line 1\nGet off at Yongsan Station Exit 5\n- Walk about 300m to Shinyongsan Station Bus Stop (03-004)\nTake a bus toward Nodeul Island\n- Get off at Nodeul Island Stop (03-340)\n\nLine 4\nShinyongsan Station Exit 3\n- Walk 100m to Shinyongsan Station Bus Stop (03-004)\nTake a bus toward Yongsan / Nodeul Island\n- Get off at Nodeul Island Stop (03-340)\n\nLine 9\nNodeul Station Exit 2\n- Walk approximately 700m toward Hangang Bridge\n",
+        "directions_explain_2" : "Blue Bus Routes\n150, 151, 152, 500, 504, 506,\n507, 605, 750A, 750B, 751, 752",
+        "directions_explain_3" : "6211\n\nHangang Bus\nViewable along the Yeouido–Apgujeong section of the route.",
     },
     ja : {
         "index_button_introduce" : "(일본어)아뜰리에 노들 소개",

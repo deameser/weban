@@ -21,27 +21,25 @@ body {
   color: #7a7a7a;
 }
 
-.lang-dropdown select{
+/* .lang-dropdown select{
   position: absolute;
   padding: 8px 20px 8px 8px;
   border: 1px solid transparent;
-  /*border-radius: 8px;*/
   background: transparent;
   outline: none;
   cursor: pointer;
   color: transparent;
-  /* color: #7a7a7a; */
   font-size: 1.1rem;
   
   background-image: url('../Images/common/lang_arrow_icon.png');
   background-repeat: no-repeat;
-  background-position: right 10px center;  /* 오른쪽 안쪽에 배치 */
+  background-position: right 10px center; 
   background-size: 9px auto;
   
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-}
+} */
 
 /* 시간표 */
 .schedule{

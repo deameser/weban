@@ -88,7 +88,7 @@ body {
   /*padding: 0.3rem 0.6rem;*/
   background-color: transparent;
   /*box-shadow: 0 12px 32px rgba(0,0,0,0.2);*/
-  border: 1px solid rgba(0,0,0,0.05);
+  border: 1px solid rgba(0, 0, 0, 0.05);
 }
 .main-title-back-button-img {
   width: 8px;
@@ -150,8 +150,10 @@ body {
   background: transparent;
   outline: none;
   cursor: pointer;
-  color: transparent;
+  /* color: transparent; */
+  color: #fff;
   font-size: 1.1rem;
+  font-weight: 400;
   
   background-image: url('../Images/common/lang_arrow_icon.png');
   background-repeat: no-repeat;
