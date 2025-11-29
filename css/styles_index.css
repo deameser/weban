@@ -6,7 +6,7 @@ body {
       url('../Images/index/index_bg.png'),
       url('../Images/index/index_bg_black.png');
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-    background-size: 100% 500px, 100% 660px, 400px auto, cover;
+    background-size: 100% 500px, 100% 660px, min(100%, 400px) auto, 100% 100%;
     /* background-size: 100% 500px, 100% 660px, min(600vw, 400px) auto, cover; */
     background-position: top center, bottom center, top center, top center;
     background-color: transparent, transparent, transparent, transparent;
@@ -29,11 +29,12 @@ body {
     margin-top: 100px;
 }
 .main-index .container{
-  max-width: var(--container-max);
-  width: 100%;
+  /* max-width: var(--container-max); */
+  width: min(100%, 360px);
   margin: 0 auto;
-  padding: 0 16px;
+  /* padding: 0 16px; */
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 .main-index-grid{
   display: grid;
@@ -47,7 +48,9 @@ body {
     display: flex;
     align-items: center;
     /* gap: 14px; */
-    width: 345px;
+    /* width: 345px; */
+    width: 90%;        /* 컨테이너 가로를 꽉 채우되 */
+    max-width: 345px;   /* 최대 345px까지만 */
     min-height: 24px;
     /* height: 43px; */
     padding: 13px 16px;
