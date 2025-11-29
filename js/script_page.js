@@ -177,3 +177,33 @@ function onMeta(){
   seekBar.value = audio.currentTime || 0;
   syncFillPx();
 }
+function updateAudioForLang(lang) {
+  const audio = document.getElementById('info-sound-audio');
+  if (!audio) return;
+
+  // data-src-ko, data-src-en 이런 식으로 읽기
+  const attrName = 'data-src-' + lang;   // ex) data-src-ko
+  const newSrc = audio.getAttribute(attrName);
+
+  if (!newSrc) {
+    // 해당 언어 파일 없으면 그냥 현재 src 유지
+    return;
+  }
+
+  const wasPlaying  = !audio.paused && !audio.ended;
+  const currentTime = audio.currentTime || 0;
+
+  // 같은 파일이면 굳이 바꿀 필요 없음
+  if (audio.src.endsWith(encodeURI(newSrc))) {
+    return;
+  }
+
+  audio.src = newSrc;
+  audio.load();
+
+  // 플레이어 UI / 게이지는 기존 이벤트들(loadedmetadata, timeupdate)이 알아서 갱신
+  if (wasPlaying) {
+    audio.currentTime = currentTime; // 필요 없으면 이 줄 빼도 됨
+    audio.play().catch(() => {});
+  }
+}

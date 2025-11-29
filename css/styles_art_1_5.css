@@ -147,7 +147,7 @@ body {
     position: relative; 
     padding: 30px;
 } */
-
+/* 
 .art-explain-text-bg{
     position: relative; 
     width: 345px;
@@ -155,14 +155,12 @@ body {
     margin: -15px auto;
     display: flex;
     flex-direction: column;
-    /*align-items: center;*/
-    /* align-items: flex-start; */
     background-image: url('../Images/art_1_5/art_1_5_explain_bg.png');
-    background-repeat: no-repeat;   /* 반복 안 함 */
-    background-position: center;    /* 가운데 정렬 */
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: 345px 140px;
     z-index: 0;
-}
+} */
 
 .art-explain-text-image {
     display: flex;

@@ -32,13 +32,19 @@ document.addEventListener('DOMContentLoaded', function() {
         selectLang.value = saved;
         setLanguage(saved);
         updateLangIcon(saved);
+        if (typeof updateAudioForLang === 'function') {
+            updateAudioForLang(saved);
+        }
 
         // 드롭다운이 바뀔 때마다 실행
         selectLang.addEventListener("change", function () {
             const lang = this.value;
             setLanguage(lang);
             localStorage.setItem("lang", lang);
-            updateLangIcon(saved);
+            updateLangIcon(lang);
+            if (typeof updateAudioForLang === 'function') {
+                updateAudioForLang(lang);
+            }
         });
     }
     function updateLangIcon(lang) {

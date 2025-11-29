@@ -158,21 +158,19 @@ body {
     padding: 30px;
 } */
 
-.art-explain-text-bg{
+/* .art-explain-text-bg{
     position: relative; 
     width: 345px;
     height: 100px; 
     margin: 5px auto;
     display: flex;
     flex-direction: column;
-    /*align-items: center;*/
-    /* align-items: flex-start; */
     background-image: url('../Images/art_1_1/art_1_1_explain_bg.png');
-    background-repeat: no-repeat;   /* 반복 안 함 */
-    background-position: center;    /* 가운데 정렬 */
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: 345px 100px;
     z-index: 0;
-}
+} */
 
 .art-explain-text-image {
     display: flex;
