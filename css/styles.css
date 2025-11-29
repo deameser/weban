@@ -32,45 +32,55 @@ body {
   }
 }
 .main-title-overlays {
-  position: absolute;
-  top: 1rem;
-  left: 0;
-  right: 0;
+  position: relative;
+  inset: 0;
   z-index: 10;
 
   max-width: var(--container-max);
   margin: 0 auto;
   padding: 0 1.25rem;
+  height: 100%;
 
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-    background-color: transparent;
+  /* align-items: flex-start; */
+  align-items: center;
+  background-color: transparent;
 }
 .main-title-overlay-left,
 .main-title-overlay-right,
 .main-title-overlay-center {
-  position: relative;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-flex;
+  align-items: center;
     background-color: transparent;
 }
 
 /* 좌상단 로고용 */
 .main-title-overlay-left {
-  left: 0.1rem;
-  position: relative;
-  margin-left: 0px;
+  /* left: 0.1rem;
+  position: relative; */
+  /* margin-left: 0px; */
+  left: 1.25rem;  
 }
 
 /* 우상단 언어 드롭다운용 */
 .main-title-overlay-right {
-  display: flex;
-  right: 0.1rem;
-  margin-right: -30px;
+  /* display: flex;
+  right: 0.1rem; */
+  /* justify-content: flex-end;
+  margin-right: -40px; */
+  right: -1.25rem;
 }
 .main-title-overlay-center{
-  display: flex;
+  /* display: flex;
   margin: 0 auto;
-  height: 80px;
+  height: 80px; */
+  /* justify-content: center; */
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* 좌상단 작은 로고/배지, 버튼 스타일 */
@@ -107,7 +117,8 @@ body {
   /*max-width: 120px;*/
   width: 72px;
   height: 19px;
-  margin-left: 0px;
+  /* margin-left: 0px; */
+  margin: 0;
 
   background-color: transparent;
   box-shadow: 0 12px 32px rgba(0,0,0,0.2);
@@ -122,17 +133,17 @@ body {
   background-color: transparent;
   box-shadow: 0 12px 32px rgba(0,0,0,0.2);
   border: 1px solid rgba(0,0,0,0.05);
-  margin: 10px auto;
-  margin-right: 63px;
+  margin: 0px auto;
+  /* margin-right: 63px; */
 }
 .lang-dropdown-icon-img{
   display: block;
   width: 20px;
   height: 20px;
-  margin-left: 0px;
+  /* margin-left: 0px;
   margin-right: -5px;
-  margin-top: 8px;
-
+  margin-top: 8px; */
+  margin: 0 0 0 0; 
   background-color: transparent;
 }
 .lang-dropdown{

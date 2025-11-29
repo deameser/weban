@@ -3,7 +3,7 @@ body {
   background-image: 
     url('../Images/schedule/schedule_bg.png');
   background-repeat: no-repeat;
-  background-size: min(600vw, 540px) auto;
+  background-size: min(600vw, 660px) auto;
   background-position: top center;
   background-color: #000000;
   /*padding-bottom: calc(var(--bottom-h, 64px) + env(safe-area-inset-bottom));*/
