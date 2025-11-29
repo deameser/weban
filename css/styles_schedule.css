@@ -95,12 +95,6 @@ body {
   font-weight: 400;
   height: 10px;
 }
-.schedule-explain-sub-extra{
-  margin: 4px 0 0;
-  padding-left: 0px;       /* 기존 left 텍스트 들여쓰기와 맞추고 싶으면 */
-  font-size: 0.5rem;        /* 좀 더 작은 사이즈 */
-  color: #ffffff;           /* 기존 텍스트 색과 맞추기 */
-}
 .schedule-explain-name
 {
   width: 80%;
@@ -117,20 +111,13 @@ body {
   /* grid-template-columns: 75px 20px 300px;  */
   /* grid-template-columns: 60px 1px minmax(0, 1fr); */
   /* align-items: center; */
-  width: 100%;
+  width: 100%;                       /* 고정하고 싶으면 */
   max-width: 660px; 
   margin-left: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.schedule-explain-sub-left2{
-  text-align: left;  
-  margin-left: 20px;
-  color: #fff;
-  font-size: 0.65rem;
-  font-weight: 400;
-  height: 10px;
-}
+
 .schedule-explain-sub .row {
   display: contents;  /* ← 각 row가 위의 3열 그리드를 같이 쓰게 함 */
 }
