@@ -63,7 +63,7 @@ body {
   margin: 30px auto;
 }
 
-.schedule-explain-img{
+/* .schedule-explain-img{
     display: block;
     width: 223px;
     height: 67px;
@@ -71,7 +71,7 @@ body {
     justify-content: center;
     margin: 0 auto;
     transform: translate(-50px);
-}
+} */
 
 .schedule-info-image{
   width: 100%;
@@ -97,7 +97,7 @@ body {
 }
 .schedule-explain-name
 {
-  width: 100%;
+  width: 80%;
   max-width: 660px; 
   color: #fff;
   font-size: 0.1rem;
