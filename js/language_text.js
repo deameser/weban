@@ -25,8 +25,8 @@ const translations = {
         "schedule_explain_date" : "전시 기간 | 2025.11.01~ 2025.12.15",
         "schedule_explain_pos" : "상영 장소 | 노들섬 아트라운지 미디어볼",
         "schedule_explain_pos_detail" : "노들섬 아트라운지 미디어볼 상명 시간",
-        "schedule_explain_time" : "상명 시간 | 매일 11:00~ 21:00 (10분 간격 순환 상영)",
-        "schedule_explain_time_detail" : "매일 11:00~ 21:00 (10분 간격 순환 상영)",
+        "schedule_explain_time" : "상명 시간 | 매일 11:00~ 21:00",
+        "schedule_explain_time_detail" : "(10분 간격 순환 상영)",
 
         "schedule_name" : "작품명",
         "schedule_time" : "상영 시간",
@@ -117,7 +117,7 @@ const translations = {
         "schedule_explain_date" : "Exhibition Period | 2025.11.01~ 2025.12.15",
         "schedule_explain_pos" : "Screening Venue | Media Wall, Nodeul Island Art Lounge",
         "schedule_explain_pos_detail" : "",
-        "schedule_explain_time" : "Screening Hours | Daily 11:00 ~ 21:00 (screened in 10 minute intervals)",
+        "schedule_explain_time" : "Screening Hours | Daily 11:00 ~ 21:00",
         "schedule_explain_time_detail" : "(screened in 10 minute intervals)",
 
         "schedule_name" : "작품명",
