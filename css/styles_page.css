@@ -106,7 +106,7 @@ header.nav{
 */
 .info-sound{
     position: relative;
-    width: 344px;
+    width: min(100%, 344px);
     /* width: min(100%, var(--container-max, 412px)); */
     color: #111;
     margin: 0 auto;
@@ -117,7 +117,7 @@ header.nav{
 
 .info-sound-audio-player {
     position: relative;
-    width: 344px;
+    width: min(100%, 344px);
     /* width: min(100%, 344px); */
     height: 94px; /*94*/
     background: url("../Images/common/sound_bg.png") center/cover no-repeat;

@@ -44,7 +44,7 @@ body {
 /* 시간표 */
 .schedule{
     position: relative; 
-    width: 344px;
+    width: min(100%, 344px);
     height: 367px; 
     margin: 24px auto;
     display: flex;
@@ -81,7 +81,7 @@ body {
 
 .schedule-info-image-img{
     display: block;
-    width: 327px;
+    width: min(100%, 327px);
     height: 179px;
     /* object-fit: contain; */
     /*justify-content: center;*/
