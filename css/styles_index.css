@@ -83,7 +83,7 @@ body {
 /* 텍스트 */
 .index-btn-text {
   display: flex;
-  max-width: 80%;
+  max-width: 90%;
   gap: 2px;              /* 둘 사이 간격 */
   align-items: baseline; /* 윗줄 맞추기 */
   margin-left: -15px;
