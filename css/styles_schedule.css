@@ -45,16 +45,17 @@ body {
 .schedule{
     position: relative; 
     width: min(100%, 344px);
-    height: 367px; 
+    height: 550x; 
     margin: 24px auto;
     display: flex;
     flex-direction: column;
     /*align-items: center;*/
     /* align-items: flex-start; */
-    background-size: contain;
+    background-size: min(100%, 344px) 550px;
     background-image: url('../Images/schedule/schedule_info_bg.png');
     background-repeat: no-repeat;   /* 반복 안 함 */
     background-position: center;    /* 가운데 정렬 */
+    border-radius: 20px;
     z-index: 0;
 }
 .schedule-explain{
@@ -81,8 +82,8 @@ body {
 
 .schedule-info-image-img{
     display: block;
-    width: min(100%, 327px);
-    height: 179px;
+    width: min(100%, 300px);
+    height: auto;
     /* object-fit: contain; */
     /*justify-content: center;*/
     margin: 0 auto;
@@ -120,8 +121,15 @@ body {
   width: 100%;
   max-width: 660px; 
   margin-left: 0px;
-  margin-top: 0px;
+  /* margin-top: 0px; */
   margin-bottom: 0px;
+}
+.schedule-explain-sub h1{
+  color: #fff;
+  font-size: 0.60rem;
+  font-weight: 400;
+  height: auto;
+  white-space: pre;
 }
 .schedule-explain-sub2 {
   display: block;
@@ -131,14 +139,14 @@ body {
   width: 100%;
   max-width: 660px; 
   margin-left: 0px;
-  margin-top: -6px;
+  margin-top: -8px;
   margin-bottom: 0px;
 }
 .schedule-explain-sub-left2{
   text-align: left;  
   margin-left: 20px;
   color: #fff;
-  font-size: 0.65rem;
+  font-size: 0.60rem;
   font-weight: 400;
   /* height: 10px; */
 }

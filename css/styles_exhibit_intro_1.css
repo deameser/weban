@@ -38,7 +38,8 @@ body {
 .exhibit-title-logo{
     margin-top: 0px;
     max-width: 400px;
-    width: 100%;
+    width: 344px;
+    height: 193px;
     overflow: hidden;     /* 밖으로 삐져나온 부분 가리기 */
   margin: 0 auto;
 }

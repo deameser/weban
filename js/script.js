@@ -35,6 +35,12 @@ document.addEventListener('DOMContentLoaded', function() {
         if (typeof updateAudioForLang === 'function') {
             updateAudioForLang(saved);
         }
+        if (typeof updateScheduleImgForLang === 'function') {
+            updateScheduleImgForLang(saved);
+        }
+        if (typeof updateTimeTableImgForLang === 'function') {
+            updateTimeTableImgForLang(saved);
+        }
 
         // 드롭다운이 바뀔 때마다 실행
         selectLang.addEventListener("change", function () {
@@ -44,6 +50,12 @@ document.addEventListener('DOMContentLoaded', function() {
             updateLangIcon(lang);
             if (typeof updateAudioForLang === 'function') {
                 updateAudioForLang(lang);
+            }
+            if (typeof updateScheduleImgForLang === 'function') {
+                updateScheduleImgForLang(lang);
+            }
+            if (typeof updateTimeTableImgForLang === 'function') {
+                updateTimeTableImgForLang(lang);
             }
         });
     }

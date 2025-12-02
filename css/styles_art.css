@@ -82,3 +82,36 @@
     /* margin-left: 20px; */
     line-height: 1.2;
 }
+
+.art-explain-time-table-bg{
+    position: relative; 
+    width: 345px;
+    /* height: 340px;  */
+    margin: 10px auto;
+    display: flex;
+    padding: 0px 0px 0px; 
+    box-sizing: border-box;
+    flex-direction: column;
+    
+    border-style: solid;
+    border-width: 16px;  
+    border-image-source: url('../Images/art_1_1/art_1_1_explain_bg.png');
+    border-image-slice : 100 fill;
+    border-image-repeat: stretch;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% 100%;
+
+    /* background-image: url('../Images/art_1_1/art_1_1_explain_bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 345px 340px; */
+    z-index: 0;
+}
+.art-explain-time-table-img{    
+    display: block;
+    width: min(100%, 300px);
+    height: auto;
+    margin: 30px auto;
+    margin-bottom: 30px;
+}

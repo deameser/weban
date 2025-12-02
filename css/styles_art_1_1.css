@@ -201,21 +201,6 @@ body {
     font-size: 1.0rem;
     font-weight: 300;
 } */
-.art-explain-time-table-bg{
-    position: relative; 
-    width: 345px;
-    height: 210px; 
-    margin: -40px auto;
-    display: flex;
-    flex-direction: column;
-    /*align-items: center;*/
-    /* align-items: flex-start; */
-    background-image: url('../Images/art_1_1/art_1_1_time_table.png');
-    background-repeat: no-repeat;   /* 반복 안 함 */
-    background-position: center;    /* 가운데 정렬 */
-    background-size: contain;
-    z-index: 0;
-}
 .page-bottom{ 
     margin-top: 70px;
     margin-bottom: 15px;

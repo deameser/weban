@@ -207,3 +207,29 @@ function updateAudioForLang(lang) {
     audio.play().catch(() => {});
   }
 }
+function updateScheduleImgForLang(lang) {
+  const img = document.querySelector('.schedule-info-image-img');
+  if (!img) return;
+
+  const attrName = 'data-src-' + lang;   // 예: data-src-ko, data-src-en
+  const newSrc = img.getAttribute(attrName);
+  if (!newSrc) return;
+
+  // 같은 이미지면 굳이 다시 안 바꿔도 됨 (옵션)
+  if (img.src.includes(newSrc)) return;
+
+  img.src = newSrc;
+}
+function updateTimeTableImgForLang(lang) {
+  const img = document.querySelector('.art-explain-time-table-img');
+  if (!img) return;
+
+  const attrName = 'data-src-' + lang;   // 예: data-src-ko, data-src-en
+  const newSrc = img.getAttribute(attrName);
+  if (!newSrc) return;
+
+  // 같은 이미지면 굳이 다시 안 바꿔도 됨 (옵션)
+  if (img.src.includes(newSrc)) return;
+
+  img.src = newSrc;
+}
