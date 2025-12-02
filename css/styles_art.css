@@ -115,3 +115,66 @@
     margin: 30px auto;
     margin-bottom: 30px;
 }
+.art-explain-time-table-title{
+  color: #000000;
+  font-size: 0.6rem;
+  font-weight: 700;
+}
+.art-explain-time-table-all {
+  width: 100%;
+  max-width: 660px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0px;      /* 줄 간 간격 */
+}
+.art-explain-time-table{
+  display: grid;
+  /* 4개의 열 너비를 원하는 대로 조절 */
+  grid-template-columns: 40px 75px minmax(0, 1fr) 25px;
+  column-gap: 8px;   /* 열 사이 간격 */
+  align-items: center;
+}
+/* .art-explain-time-table h1{
+  color: #000000;
+  font-size: 0.65rem;
+  font-weight: 400;
+} */
+.time-table-title_1 {
+  text-align: left;
+  /* width: 20px; */
+  /* margin-left: 40px; */
+
+  color: #000000;
+  font-size: 0.55rem;
+  font-weight: 800;
+}
+.time-table-title_2 {
+  text-align: left;
+  /* width: 20px; */
+  /* margin-left: 40px; */
+
+  color: #000000;
+  font-size: 0.5rem;
+  font-weight: 400;
+}
+.time-table-name {
+  text-align: left;
+  /* width: 160px;
+  max-width: 500px;
+  word-break: break-all;
+  margin-right: 0px; */
+
+  color: #000000;
+  font-size: 0.5rem;
+  font-weight: 600;
+}
+.time-table-time {
+  text-align: right;
+  /* width: 80px;
+  margin-right: 12px; */
+
+  color: #000000;
+  font-size: 0.5rem;
+  font-weight: 600;
+}
