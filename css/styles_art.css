@@ -39,12 +39,12 @@
     position: relative; 
     color: #0000ff;      
     padding: 0px;
-    margin-top: -25px;
+    margin-top: -15px;
  }
 .art-name h1 {
     font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     font-weight: 700;
-    font-size: 1.56rem;
+    font-size: 1.16rem;
     line-height: 1.4;
 }
  .art-explain-text-bg{
@@ -131,7 +131,8 @@
 .art-explain-time-table{
   display: grid;
   /* 4개의 열 너비를 원하는 대로 조절 */
-  grid-template-columns: 40px 75px minmax(0, 1fr) 25px;
+  /* grid-template-columns: 30px 245px minmax(0, 1fr) 25px; */
+  grid-template-columns: 40px 55px minmax(0, 1fr) 25px;
   column-gap: 8px;   /* 열 사이 간격 */
   align-items: center;
 }

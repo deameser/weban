@@ -110,7 +110,7 @@ body {
   font-size: 0.1rem;
   font-weight: 200;
   margin-top: 0px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   margin-left: 20px;
 }
 .schedule-explain-sub {
@@ -249,6 +249,110 @@ body {
     justify-content: center; /* 수평 가운데 */
     margin: 0 auto;
 }
+
+
+/* 시간표 텍스트 */
+
+.art-explain-time-table-bg{
+    position: relative; 
+    width: 345px;
+    /* height: 340px;  */
+    margin: -10px auto;
+    display: flex;
+    padding: 0px 0px 0px; 
+    box-sizing: border-box;
+    flex-direction: column;
+    
+    border-style: solid;
+    border-width: 16px;  
+    border-color: transparent;
+    border-image-source: none;
+    /* border-image-source: url('../Images/art_1_1/art_1_1_explain_bg.png');
+    border-image-slice : 100 fill;
+    border-image-repeat: stretch;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% 100%; */
+
+    /* background-image: url('../Images/art_1_1/art_1_1_explain_bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 345px 340px; */
+    z-index: 0;
+}
+.art-explain-time-table-img{    
+    display: block;
+    width: min(100%, 300px);
+    height: auto;
+    margin: 30px auto;
+    margin-bottom: 30px;
+}
+.art-explain-time-table-title{
+  color: #fff;
+  font-size: 0.6rem;
+  font-weight: 400;
+  margin-top: -40px;
+}
+.art-explain-time-table-all {
+  width: 100%;
+  max-width: 660px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0px;      /* 줄 간 간격 */
+}
+.art-explain-time-table{
+  display: grid;
+  /* 4개의 열 너비를 원하는 대로 조절 */
+  grid-template-columns: 40px 55px minmax(0, 1fr) 25px;
+  column-gap: 8px;   /* 열 사이 간격 */
+  align-items: center;
+}
+/* .art-explain-time-table h1{
+  color: #000000;
+  font-size: 0.65rem;
+  font-weight: 400;
+} */
+.time-table-title_1 {
+  text-align: left;
+  /* width: 20px; */
+  /* margin-left: 40px; */
+
+  color: #ffffff;
+  font-size: 0.55rem;
+  font-weight: 600;
+}
+.time-table-title_2 {
+  text-align: left;
+  /* width: 20px; */
+  /* margin-left: 40px; */
+
+  color: #ffffff;
+  font-size: 0.5rem;
+  font-weight: 400;
+}
+.time-table-name {
+  text-align: left;
+  /* width: 160px;
+  max-width: 500px;
+  word-break: break-all;
+  margin-right: 0px; */
+
+  color: #ffffff;
+  font-size: 0.5rem;
+  font-weight: 600;
+}
+.time-table-time {
+  text-align: right;
+  /* width: 80px;
+  margin-right: 12px; */
+
+  color: #ffffff;
+  font-size: 0.5rem;
+  font-weight: 600;
+}
+
+
 /* 로고 */
 .schedule-logo{
     padding: 30px;
