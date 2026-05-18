@@ -1,7 +1,7 @@
 body {
   margin: 0;
   background-image: 
-    url('../Images/schedule/schedule_bg.png');
+    url('../Images/schedule/schedule_bg.jpg');
   background-repeat: no-repeat;
   background-size: min(600vw, 660px) auto;
   background-position: top center;
@@ -304,7 +304,7 @@ body {
 .art-explain-time-table{
   display: grid;
   /* 4개의 열 너비를 원하는 대로 조절 */
-  grid-template-columns: 40px 55px minmax(0, 1fr) 25px;
+  grid-template-columns: 50px 55px minmax(0, 1fr) 25px;
   column-gap: 8px;   /* 열 사이 간격 */
   align-items: center;
 }

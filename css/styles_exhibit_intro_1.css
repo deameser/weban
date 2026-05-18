@@ -1,7 +1,7 @@
 body {
     margin: 0;
     background-image: 
-      url('../Images/exhibit_intro_1/exhibit_intro_1_bg.png');
+      url('../Images/exhibit_intro_1/exhibit_intro_1_bg.jpg');
     background-repeat: no-repeat;
     background-size: min(600vw, 660px) auto;
     background-position: top center;
@@ -182,6 +182,23 @@ body {
   font-weight: 400;
   font-size: 0.72rem;
   /* margin-top: 10px;
+  margin-left: 20px; */
+}
+.exhibit-introduce-sub-text{
+    position: static;
+    display: block;
+    text-align: left;
+    color: #ffffff;      
+    z-index: 2;
+
+    max-width: min(100%, var(--container-max, 660px));
+    /* margin: 0 auto; */
+}
+.exhibit-introduce-sub-text h1 {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 600;
+  font-size: 0.54rem;
+  /* margin-top: 30px;
   margin-left: 20px; */
 }
 

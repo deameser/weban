@@ -1,7 +1,7 @@
 body {
     margin: 0;
     background-image: 
-      url('../Images/directions/directions_bg.png');
+      url('../Images/directions/directions_bg.jpg');
     background-repeat: no-repeat;
     background-size: min(600vw, 560px) 1083px;
     /* background-size: min(600vw, 660px) auto; */
