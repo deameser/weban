@@ -119,9 +119,9 @@ const translations = {
         "directions_explain_title_2" : "버스",
         "directions_explain_title_3" : "자선 버스",
 
-        "directions_explain_1" : "1호선\n용산역 5번출구 하차 - 도보 약 300m 위치의 신용산역\n정류장(03-004)\n노들섬 방면 버스 탑승 - 노들섬 정류장(03-340) 하차\n\n4호선\n신용산역 3번출구 - 도보 100m 위치 신용산역 정류장(03-004)\n용산-노들섬 방면 버스 탑승 - 노들섬 정류장(03-340) 하차\n\n9호선\n노들역 2번 출구 - 한강대교 방면으로 약 700m 이동\n\n\n",
+        "directions_explain_1" : "1호선\n용산역 5번출구 하차 - 도보 약 300m 위치의 신용산역 정류장(03-004)\n노들섬 방면 버스 탑승 - 노들섬 정류장(03-340) 하차 -\n노들섬 동측 주차장 방면 진입로 통해 입장\n\n4호선\n신용산역 3번출구 - 도보 100m 위치 신용산역 정류장(03-004) -\n용산-노들섬 방면 버스 탑승 - 노들섬 정류장(03-340) 하차 -\n노들섬 동측 주차장 방면 진입로 통해 입장\n\n9호선\n노들역 2번 출구 - 한강대교 방면으로 약 700m 이동 - \n노들섬 동측 주차장 방면 진입로 통해 입장\n\n\n",
         "directions_explain_2" : "간선 버스\n150, 151, 152, 500, 504, 506,\n507, 605, 750A, 750B, 751, 752",
-        "directions_explain_3" : "지선버스\n6211\n\n한강버스\n여의도 - 압구정 사이 구간에서 관람 가능",
+        "directions_explain_3" : "지선버스\n6211\n각 버스 하차 후 노들섬 동측 주차장 방면 진입로 통해 입장\n\n한강버스\n여의도 - 압구정 사이 구간에서 관람 가능",
     },
     en : {
         "index_button_introduce" : "Atelier Nodeul Introduction",
@@ -243,9 +243,9 @@ const translations = {
         "directions_explain_title_2" : "Bus",
         "directions_explain_title_3" : "Green Bus (Local Route)",
 
-        "directions_explain_1" : "Line 1\nYongsan Station – Exit 5 → Walk about 300m to Yongsan Station\nBus Stop (03-004) → Take a bus toward Nodeul Island → Get off at\nNodeul Island Stop (03-340)\n\nLine 4\nSinyongsan Station – Exit 3 → Walk 100m to Sinyongsan Station\nBus Stop (03-004) → Take a bus toward Yongsan / Nodeul Island →\nContinue toward Hangang Bridge for about 700m\n\nLine 9\nNodeul Station – Exit 2 → Walk approximately 700m toward\nHangang Bridge\n",
+        "directions_explain_1" : "Line 1\nYongsan Station - Exit 5 → Walk about 300m to Yongsan Station\nBus Stop (03-004) → Take a bus toward Nodeul Island → Get off at\nNodeul Island Stop (03-340) → Enter via the access road next to the East Parking Gate\n\nLine 4\nSinyongsan Station – Exit 3 → Walk 100m to Sinyongsan Station\nBus Stop (03-004) → Take a bus toward Yongsan / Nodeul Island →\nContinue toward Hangang Bridge for about 700m → Get off at Nodeul Island Stop (03-340) → Enter via the access road next to the East Parking Gate\n\nLine 9\nNodeul Station - Exit 2 → Walk approximately 700m toward\nHangang Bridge → Enter via the access road next to the East Parking Gate\n",
         "directions_explain_2" : "Blue Bus (Main Routes)\n150, 151, 152, 500, 504, 506, 507, 605, 750A, 750B, 751, 752",
-        "directions_explain_3" : "6211\n\nHangang Bus\nThe exhibition is visible while riding between Yeouido and Apgujeong.",
+        "directions_explain_3" : "6211\n→ Get off and enter via the access road next to the East Parking Gate\n\nHangang Bus\nThe exhibition is visible while riding between Yeouido and Apgujeong.",
     },
     ja : {
         "index_button_introduce" : "(일본어)아뜰리에 노들 소개",
