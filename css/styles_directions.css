@@ -39,7 +39,6 @@ body {
 }
 .map-image-img{
     width: 345px;
-    height: 222px;
     height: auto;
     display: flex;
     object-fit: cover;
@@ -108,7 +107,7 @@ body {
 }
 .map-image-img-sub{
     width: 345px;
-    height: 222px;
+    /* height: 245px; */
     height: auto;
     display: flex;
     object-fit: cover;
