@@ -101,7 +101,7 @@ const translations = {
         "time_table_title_sub_2" : "모먼트 서울",
         "time_table_title_sub_3" : "한강 네이처",
         "time_table_art_1" : "1. 이돈아 〈무한한 행복을 향한 여정〉",
-        "time_table_art_2" : "2. 최성록 〈서울하늘변신구름많음〉",
+        "time_table_art_2" : "2. 최성록 〈서울하늘변신구름많음〉", 
         "time_table_art_3" : "",
         "time_table_art_4" : "3. 서울응원 봄메시지",
         "time_table_art_5" : "4. 해치와 서울나들이",
