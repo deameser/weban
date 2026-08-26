@@ -10,7 +10,9 @@ body {
     background-repeat: /*no-repeat, */no-repeat, no-repeat, no-repeat;
     background-size: /*100% 500px,*/ 100% 340px, min(100%, 400px) auto, 100% 100%;
     /* background-size: 100% 500px, 100% 660px, min(600vw, 400px) auto, cover; */
-    background-position:/* top center, */bottom center, top center, top center;
+    background-position:/* top center, */bottom center, top center, top center;    
+    /* background-position: calc(50% + -100px) 300px; */
+    /* background-position: center 300px; */
     background-color: /*transparent, */transparent, transparent, transparent;
     padding-bottom: 140px;
 }

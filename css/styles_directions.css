@@ -28,21 +28,50 @@ body {
     text-align: center;
     color: #fff;
     margin: 0px auto;
-}
-.directions-title h1{
     font-size: 1.07rem;
     font-weight: 600;
 }
-.map-image{
-    padding: 0px;
-    margin: 35px auto;
+.map-image-text{
+    position: relative; 
+    display: flex; 
+    z-index: 2;   
+    width: 583px;
+    height: 16px;
+    margin: 0px auto;
+    
+    max-width: min(100%, var(--container-max, 660px));
+    margin-top: 15px;
+    margin-left: 50px;
 }
-.map-image-img{
+.map-image-text h1{
+    text-align: center;
+    color: #fff;
+    /* margin: 0px auto; */
+    font-size: 0.9rem;
+    font-weight: 550;
+}
+.map-image-1{
+    padding: 0px;
+    margin: 45px auto;
+}
+.map-image-img-1{
     width: 345px;
     height: auto;
     display: flex;
     object-fit: cover;
     margin: 0px auto;
+    justify-content: center; /* 수평 가운데 */
+}
+.map-image-2{
+    padding: 0px;
+    margin: 35px auto;
+}
+.map-image-img-2{
+    width: 345px;
+    height: auto;
+    display: flex;
+    object-fit: cover;
+    margin: 20px auto;
     justify-content: center; /* 수평 가운데 */
 }
 @media (min-width: 768px) {
